@@ -1,0 +1,33 @@
+#!/bin/bash
+
+echo "enter title:"
+read title
+
+FN="$(date "+%y-%m-%d")-$title.html"
+
+HTML="<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=\"stylesheet\" href=\"../static/style.css\" type=\"text/css\">
+    <title>$title</title>
+    <style>
+      a#back {
+        margin-top: 3px;
+        margin-left: -15px;
+        color: #515151;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      h3 { color: black; }
+    </style>
+  </head>
+  <body>
+    <a id='back' href='/blog.php'>&lt; back</a>
+    <h3>$title</h3>
+
+  </body>
+</html>
+"
+
+echo "$HTML" > "$FN"
+$EDITOR "$FN"
