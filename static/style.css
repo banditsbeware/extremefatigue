@@ -3,7 +3,7 @@ html {
   font-family: "Verdana";
   font-size: 14px;
   color: #515151;
-	background-color: #edf5fc;
+	background-color: #f0f7f4;
 }
 
 body {
@@ -17,6 +17,10 @@ p#cp {
   font-size: 8px;
   position: absolute;
   bottom: 0;
+}
+
+ul {
+  padding-left: 0;
 }
 
 img {
