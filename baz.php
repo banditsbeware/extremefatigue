@@ -33,7 +33,8 @@
     <ul>
       <li>Package manager: Homebrew</li>
       <li>Terminal: <a>Iterm2</a></li>
-      <li>Editor: <a>NeoVim</a> or Visual Studio Code</li>
+      <li>Shell: zsh, with oh-my-zsh</li>
+      <li>Editor: <a>NeoVim</a> or Visual Studio Code (with Vim extension)</li>
       <li>Browser: Firefox, with plugins<ul style='padding-left: 20px'>
         <li>Vimium</li>
         <li>uBlock Origin</li>
