@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" contents="">
     <link rel="stylesheet" href="static/style.css" type="text/css">
-    <title>david's k&#333;ans</title>
+    <title>k&#333;ans</title>
     <style>
       p.koan {
         width: 200%;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" contents="">
     <link rel="stylesheet" href="static/style.css" type="text/css">
-    <title>david's blog</title>
+    <title>blog</title>
     <style>
       ul {
         margin-top: 30px;

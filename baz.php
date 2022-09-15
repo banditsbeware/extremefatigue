@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" contents="">
     <link rel="stylesheet" href="static/style.css" type="text/css">
-    <title>david's website</title>
+    <title>baz</title>
     <style>
       img {
         max-width: 200%;
@@ -54,7 +54,7 @@
       </ul></li>
     </ul>
 
-    <p id='cp'>&#169; david rademacher <?php echo date("Y"); ?></p> 
+    <p id='cp'>&#169; extremefatigue <?php echo date("Y"); ?></p> 
 
   </body>
 
