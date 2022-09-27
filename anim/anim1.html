@@ -1,0 +1,65 @@
+<script>
+
+class SineWave {
+  constructor(x, y, a, p) {
+    this.x = x;
+    this.y = y;
+    this.a = a;
+    this.p = p;
+    this.o = 0;
+  }
+
+  draw() {
+    c.beginPath();
+    c.moveTo(
+      this.x + this.a * Math.sin(this.o), 
+      this.y
+    );
+    for (let i=0; i<1; i+=0.01) {
+      c.lineTo(
+        this.x + this.a * Math.sin(2 * Math.PI * i + this.o), 
+        this.y + this.p * i
+      );
+    }
+    c.strokeStyle = 'black';
+    c.stroke();
+    c.closePath();
+  }
+
+  update() {
+    this.o += 2 * Math.PI * 0.01;
+    if (this.o > 2 * Math.PI) this.o = 0;
+    this.draw();
+  }
+
+}
+
+let sines = [];
+
+let dx = innerWidth/10, dy = innerHeight/10;
+let r;
+for (let x=0; x<=innerWidth; x+=dx) {
+  r = 0;
+  for (let y=0; y<=innerHeight; y+=dy) {
+    sines.push(
+      new SineWave(
+        (r % 2 == 0) ? x : x + dx/2, 
+        y, 
+        8, 
+        50
+      )
+    ); 
+  r++;
+  }
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  c.clearRect(0, 0, innerWidth, innerHeight);
+
+  sines.forEach(obj => { obj.update() } ); 
+}
+
+animate();
+
+</script>

@@ -13,19 +13,16 @@
 
     <h3>home - extreme fatigue</h3>
 
-<!--<ul>
-      <li>23</li>
-      <li>Fort Worth, TX</li>
-      <li>running, coffee, music, anime, vintage t-shirts</li>
-      <li>degrees in computer science &amp; physics</li>
-      <li>DCI (2015-19)</li>
-      <li>software engineer, flight control computers, Lockheed Martin aeronautics</li>
-    </ul>-->
-
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
 
-<!--<img style='width:300px;margin-top:0px;' src='static/media/me.jpg' />-->
-
   </body>
+
+  <?php include "anim/_base.html"; ?>
+  
+  <?php
+    $file = "anim/anim1.html";
+    include $file;    
+  ?>
+
 
 </html>
