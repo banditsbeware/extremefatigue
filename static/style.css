@@ -1,13 +1,14 @@
 html {
   box-sizing: border-box;
   font-family: "Verdana";
-  font-size: 14px;
+  font-size: 0.9em;
   color: #515151;
 	background-color: #f0f7f4;
 }
 
 body {
-  max-width: 400px;
+  max-width: 60ch;
+  padding: 3em 1em;
 	margin: auto;
 }
 

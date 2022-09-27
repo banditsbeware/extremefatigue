@@ -7,10 +7,8 @@
     <title>baz</title>
     <style>
       img {
-        max-width: 200%;
+        max-width: 60ch;
         display: block;
-        margin-left: -50%;
-        margin-right: -50%;
       }
     </style>
   </head>
@@ -19,7 +17,7 @@
     
     <?php include "static/nav.php"; ?>
     
-    <h3>baz - laptop</h3>
+    <h3>baz - macbook pro</h3>
 
     <img src='static/media/macback.png' />
 

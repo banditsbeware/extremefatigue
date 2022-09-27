@@ -7,10 +7,10 @@
     <title>k&#333;ans</title>
     <style>
       p.koan {
-        width: 200%;
+      /*width: 200%;*/
         line-height: 1.5;
-        margin-left: -50%;
-        margin-top: 100px;
+      /*margin-left: -50%;*/
+        margin-bottom: 60px;
       }
     </style>
   </head>
