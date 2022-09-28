@@ -20,7 +20,7 @@
   <?php include "anim/_base.html"; ?>
   
   <?php
-    $file = "anim/anim1.html";
+    $file = "anim/anim2.html";
     include $file;    
   ?>
 

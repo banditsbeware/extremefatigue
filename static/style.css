@@ -2,8 +2,8 @@ html {
   box-sizing: border-box;
   font-family: "Verdana";
   font-size: 0.9em;
-  color: #515151;
-	background-color: #f0f7f4;
+  color: #3c3c3c;
+	background-color: #dadaec45;
 }
 
 body {
@@ -13,12 +13,10 @@ body {
 }
 
 p#cp {
-  width: 400px;
   text-align: center;
   font-size: 8px;
   position: fixed;
   bottom: 0;
-  right: 0;
 }
 
 ul {

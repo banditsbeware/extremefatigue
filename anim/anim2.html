@@ -1,11 +1,12 @@
 <script>
 
 class SineWave {
-  constructor(x, y, a, p) {
+  constructor(x, y, a, p, s) {
     this.x = x;
     this.y = y;
     this.a = a;
     this.p = p;
+    this.s = s;
     this.o = 0;
   }
 
@@ -27,7 +28,7 @@ class SineWave {
   }
 
   update() {
-    this.o += 2 * Math.PI * 0.01;
+    this.o += 2 * Math.PI * this.s;
     if (this.o > 2 * Math.PI) this.o = 0;
     this.draw();
   }
@@ -37,7 +38,10 @@ class SineWave {
 let sines;
 function init() {
   sines = [];
-  let dx = innerWidth/10, dy = innerHeight/10;
+
+  let dx = innerWidth/randInt(10,30), 
+      dy = innerHeight/randInt(15,25);
+
   let r;
   for (let x=0; x<=innerWidth; x+=dx) {
     r = 0;
@@ -45,7 +49,10 @@ function init() {
       sines.push(
         new SineWave(
           (r % 2 == 0) ? x : x + dx/2, 
-          y, 8, 50)
+          y + rand(-50, 50), 
+          dx/2, 
+          dy,
+          0.05*(Math.random()-0.5))
       ); 
     r++;
     }

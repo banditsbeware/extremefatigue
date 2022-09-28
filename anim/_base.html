@@ -15,6 +15,14 @@
     mouse.x = event.clientX;
     mouse.y = event.clientY;
   });
+
+  addEventListener('resize', () => {
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
+    try {
+      init();
+    } catch (ReferenceError) { }
+  });
   
 //function animate() {
 //  requestAnimationFrame(animate);
@@ -24,4 +32,9 @@
 //}
 //
 //animate();
+
+  const rand = (a, b) => a + (b - a) * Math.random();
+
+  const randInt = (a, b) => Math.floor(a + (b - a) * Math.random());
+
 </script>
