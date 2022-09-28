@@ -6,23 +6,19 @@
     <link rel="stylesheet" href="static/style.css" type="text/css">
     <title>. . .</title>
   </head>
-
   <body>
-    
-    <?php include "static/nav.php"; ?>
-
-    <h3>home - extreme fatigue</h3>
-
+    <div id='top'>
+      <?php include "static/nav.php"; ?>
+      <h3>home - extreme fatigue</h3>
+    </div>
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
-
   </body>
 
   <?php include "anim/_base.html"; ?>
   
   <?php
-    $file = "anim/anim2.html";
+    $anims = glob("anim/anim*.html");
+    $file = $anims[array_rand($anims, 1)];
     include $file;    
   ?>
-
-
 </html>

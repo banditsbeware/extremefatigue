@@ -3,8 +3,10 @@ html {
   font-family: "Verdana";
   font-size: 0.9em;
   color: #3c3c3c;
-	background-color: #dadaec45;
+	background-color: #f5f5ff;
 }
+
+div#top * { background-color: #f5f5ff; } 
 
 body {
   max-width: 60ch;
