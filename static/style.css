@@ -6,7 +6,7 @@ html {
 	background-color: #f5f5ff;
 }
 
-div#top * { background-color: #f5f5ff; } 
+/* div#top * { background-color: #f5f5ff; } */
 
 body {
   max-width: 60ch;

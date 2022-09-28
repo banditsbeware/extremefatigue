@@ -1,0 +1,76 @@
+<script>
+
+  class Vector {
+    constructor(x, y, r, t) {
+      this.x = x;
+      this.y = y;
+
+      this.r = r;
+      this.t = t;
+
+      this.dx = r * Math.cos(t);
+      this.dy = r * Math.sin(t);
+    }
+
+    draw() {
+      let f = 0.3, p = Math.PI / 6;
+      let ddx1 = f * this.r * Math.cos(this.t - p),
+          ddx2 = f * this.r * Math.cos(this.t + p),
+          ddy1 = f * this.r * Math.sin(this.t - p),
+          ddy2 = f * this.r * Math.sin(this.t + p);
+
+      c.beginPath();
+      c.moveTo(this.x, this.y);
+      c.lineTo(this.x + this.dx, this.y + this.dy);
+
+      c.moveTo(this.x + this.dx - ddx1, this.y + this.dy - ddy1);
+      c.lineTo(this.x + this.dx, this.y + this.dy);
+      c.lineTo(this.x + this.dx - ddx2, this.y + this.dy - ddy2);
+
+      c.strokeStyle = 'black';
+      c.stroke();
+      c.closePath();
+    }
+
+    update() {
+      this.x += 0.05 * this.dx;
+      this.y += 0.05 * this.dy;
+      if (this.x > innerWidth) this.x = -this.dx;
+      if (this.y > innerHeight) this.y = -this.dy;
+      if (this.x < -this.dx) this.x = innerWidth;
+      if (this.y < -this.dy) this.y = innerHeight;
+      this.draw();
+    }
+
+  }
+
+  let numVectors = 70;
+  let vectors;
+
+  let angle = rand(0, 2*Math.PI);
+
+  let updateAngle = Math.random() < 0.5;
+
+  function init() {
+    vectors = [];
+    for (let x=0; x<=numVectors; x++) {
+      vectors.push(new Vector(
+        randInt(-20, innerWidth),
+        randInt(-20, innerHeight),
+        rand(5,50),
+        angle
+      ));
+    }
+  }
+  init();
+
+  function animate() {
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, innerWidth, innerHeight);
+
+    vectors.forEach(obj => { obj.update() } ); 
+  }
+
+  animate();
+
+</script>
