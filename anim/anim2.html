@@ -46,13 +46,13 @@ function init() {
   for (let x=0; x<=innerWidth; x+=dx) {
     r = 0;
     for (let y=0; y<=innerHeight; y+=dy) {
-      sines.push(
+      if (Math.random() < 0.2) sines.push(
         new SineWave(
           (r % 2 == 0) ? x : x + dx/2, 
           y + rand(-50, 50), 
-          dx/2, 
+          rand(0, dx/3), 
           dy,
-          0.05*(Math.random()-0.5))
+          0.01*(Math.random()-0.5))
       ); 
     r++;
     }

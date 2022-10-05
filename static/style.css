@@ -6,7 +6,10 @@ html {
 	background-color: #f5f5ff;
 }
 
-/* div#top * { background-color: #f5f5ff; } */
+div#top * { 
+  background-color: #f5f5ff;
+  width: fit-content;
+}
 
 body {
   max-width: 60ch;

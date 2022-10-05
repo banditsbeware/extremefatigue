@@ -9,7 +9,7 @@
   <body>
     <div id='top'>
       <?php include "static/nav.php"; ?>
-      <h3>home - extreme fatigue</h3>
+<!--  <h3>home - extreme fatigue</h3> -->
     </div>
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
   </body>
@@ -19,7 +19,7 @@
   <?php
     $anims = glob("anim/anim*.html");
     $file = $anims[array_rand($anims, 1)];
-    //$file = "anim/anim4.html";
+    //$file = "anim/anim2.html";
     include $file;    
   ?>
 </html>

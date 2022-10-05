@@ -1,0 +1,114 @@
+<script>
+const HEX = Math.PI / 6;
+
+let r = 30;
+let dy = r * Math.sqrt(3) / 2;
+let dx = r / 2;
+let d = (r / Math.cos(HEX)) - dy;
+
+const b = rand(0, r);
+
+const mov = [
+  [ 0,  0 ],                                    // stationary [0]
+  [ 0, -d ],                                    // up         [1]
+  [  d * Math.cos(HEX),  d * Math.sin(HEX) ],   // down right [2]
+  [ -d * Math.cos(HEX),  d * Math.sin(HEX) ]    // down left  [3]
+];
+const seq = [ 2, 0, 1, 0, 3, 0 ];
+
+const cnct = [
+  [ 0, 0 ],                         // don't connect [0]
+  [ 1, 0 ],                         // connect below [1]
+  [ 0, 1 ],                         // connect right [2]
+  [ 1, 1 ]                          // connect both  [3]
+];
+const seq2 = [ 3, 2, 2, 2, 1, 0 ];
+
+function dot(x, y, colo='black') {
+  c.fillStyle = colo;
+  c.beginPath();
+  c.arc(x, y, 1.5, 0, 2*Math.PI, false);
+  c.fill();
+}
+
+function connectVertex( a, b ) {
+  c.beginPath();
+  c.moveTo(a.x + a.dx, a.y + a.dy);
+  c.lineTo(b.x + b.dx, b.y + b.dy);
+  c.stroke();
+}
+
+class Vertex {
+  constructor(x, y, type) {
+    this.x = x;
+    this.y = y + (type === 0 ? 0 : d);
+    this.dx = 0;
+    this.dy = 0;
+    this.type = type;
+  }
+
+  draw() {
+    if (this.type !== 0) 
+      dot(this.x + this.dx, this.y + this.dy, 'black');
+    else
+      dot(this.x, this.y, 'black');
+  }
+
+  update(t) {
+    this.dx = t * mov[this.type][0]
+    this.dy = t * mov[this.type][1]
+    //this.draw();
+  }
+}
+
+let verteces;
+
+function init() {
+
+  verteces = [];
+
+  for (let type, y = 0; y <= 2 + innerHeight / dy; y++) {
+    verteces.push([]);
+
+    for (let x = 0; x <= 2 + innerWidth / dx; x++) {
+      type = (y % 2 == 0 ? x : x + 3) % seq.length;
+      verteces[y].push(new Vertex(x * dx - b, y * dy - b, seq[type]));
+
+    }
+  }
+}
+
+init();
+
+
+
+let t = 0;
+let A = rand(0, 1) < 0.5 ? 0.5 : rand(0.6, 5);
+
+function animate() {
+  requestAnimationFrame(animate);
+  c.clearRect(0, 0, innerWidth, innerHeight);
+
+  t = A * (1 + Math.sin(0.001 * Date.now()));
+
+  // update vertex positions
+  verteces.forEach((r) => r.forEach((v) => v.update(t)));
+
+  // draw lines between verteces
+  for (let i, y = 0; y < verteces.length-1; y++) {
+    for (let x = 0; x < verteces[0].length-1; x++) {
+      i = (y % 2 == 0 ? x : x + 3) % seq2.length;
+
+      if (cnct[seq2[i]][0])
+        connectVertex(verteces[y][x], verteces[y+1][x]);
+
+      if (cnct[seq2[i]][1])
+        connectVertex(verteces[y][x], verteces[y][x+1]);
+
+    }
+  }
+}
+
+animate();
+
+</script>
