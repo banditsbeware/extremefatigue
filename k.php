@@ -61,11 +61,11 @@ $k = array(
 shuffle($k);
 
 for ($i = 0; $i < count($k); $i++) 
-  echo "<p>". $k[$i][0] ." <a href='#". $i+1 ."'><sup>[". $i+1 ."]</sup></a>";
+  echo "<p>".($k[$i][0])." <a href='#".($i+1)."'><sup>[".($i+1)."]</sup></a>";
 
 echo "</div>";
 for ($i = 0; $i < count($k); $i++) 
-  echo "<p id='". $i+1 ."'>[". $i+1 ."] ". $k[$i][1] ."</p>";
+  echo "<p id='".($i+1)."'>[".($i+1)."] ".($k[$i][1])."</p>";
 
 ?></body>
 </html>
