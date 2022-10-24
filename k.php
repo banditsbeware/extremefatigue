@@ -30,7 +30,8 @@
     <div id="koans"><?php
 
 $k = array(
-  [
+  [ "I am walking around all alone in this splendid garden that does not belong to me and the gate of which stands wide open for anyone; I dwell here in refreshing but also oppressive loneliness. That is why I’ve been attesting to the existence of this idyllic spot for years… without expecting many strollers to come, however. For what enthralls me and what I experience as beauty is often judged to be dull and dry by others.", "M.C. Escher"
+  ],[
     "My belief is that the explanations of \"emergent\" phenomena in our brains&mdash; for instance, ideas, hopes, images, analogies, and finally consciousness and free will&mdash; are based on a kind of strange loop, an interaction between levels in which the top level reaches back down towards the bottom level and influences it, while at the same time being itself determined by the bottom level. In other words, the self-reinforcing \"resonance\" between different levels&mdash; quite like the Henkin sentence which, by merely asserting its own provability, actually becomes provable. The self comes into being at the moment is has the power to reflect itself.", "GEB"
   ],[
     "If you think you're a really good programmer... read <em>The Art of Computer Programming</em>... you should definitely send me a r&eacute;sum&eacute; if you can read the whole thing.", "Bill Gates"
@@ -43,7 +44,7 @@ $k = array(
   ],[
     "The board rewrote the definition of science, so that it is no longer limited to the search for natural explanations of phenomena.", "AP on the Kansas board of education"
   ],[
-    "Lisp has jokingly been called \"the most intelligent way to misuse a computer\". I think that description is a great compliment because it transmits the full flavor of liberation: it has assisted a number of out most gifted fellow humans in thinking previously impossible thoughts.", "Edsger Dijkstra"
+    "Lisp has jokingly been called \"the most intelligent way to misuse a computer\". I think that description is a great compliment because it transmits the full flavor of liberation: it has assisted a number of our most gifted fellow humans in thinking previously impossible thoughts.", "Edsger Dijkstra"
   ],[
     "At least it hides the face partly well, so you have the apparent face, the apple, hiding the visible but hidden, the face of the person. It's something that happens constantly. Everything we see hides another thing, we always want to see what is hidden by what we see. There is an interest in that which is hidden and which the visible does not show us. This interest can take the form of a quite intense feeling, a sort of conflict, one might say, between the visible that is hidden and the visible that is present.","Ren&eacute; Magritte on his painting <em>The Son of Man</em>"
   ],[

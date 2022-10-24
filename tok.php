@@ -17,14 +17,16 @@
 
     <p><b>[!FF]</b> No Fast Forward</p>
     <p>
-It is tempting (and sometimes unavoidable) to wish for time to pass faster when one is in an uncomfortable situation. "Doing X to pass the time" and the celebration of a time period appearing to "go by fast" are very common expressions, which presumably reflect subconscious tendencies to avoid boredom. Acknowledging the finite amount of time we have, though, I try to catch these thoughts and take the opportunity to sink deeper into the experience of the world around me; there is infinite detail in every situation, and so fast-forwarding through life wastes irreplaceable experience/priceless information/bounded consciousness.
+It is tempting (and sometimes unavoidable/rational) to wish for time to pass faster when one is in an uncomfortable situation. "Doing X to pass the time" and the celebration of a time period appearing to "go by fast" are very common expressions, which presumably reflect subconscious tendencies to avoid boredom or more severe forms of suffering. Acknowledging the finite amount of time we have, though, I try to catch these thoughts and take the opportunity to sink deeper into the experience of the world around me; there is infinite detail in every situation, and so fast-forwarding through time wastes experience, which is irreplaceable.
     </p>
 
 </br>
     <p><b>[!M]</b> No Magic</p>
     <p>
-<a target='blank_' href='https://en.wikipedia.org/wiki/Clarke%27s_three_laws'>Clarke's Third Law</a>: Any sufficiently advanced technology is indistinguishable from magic. I aspire to obtain the skills and ingenuity to create such technologies, but, with a strong sense of naturalism, I am confident in the ability of the scientific process to get us there. The lack of understanding of a technology or natural phenomenon does not indicate that it can never be understood or is only explicable by black supernatural boxes. My go-to aphorism for naturalism: there is nothing but physics.
+<a target='blank_' href='https://en.wikipedia.org/wiki/Clarke%27s_three_laws'>Clarke's Third Law</a> says that any sufficiently advanced technology is indistinguishable from magic. In order to understand advanced technology (let alone create it), the attitude that there is no such thing as magic is fundamental; everything can be understood with enough study. The lack of understanding of a technology or natural phenomenon does not indicate that it can never be understood or is only explicable by supernatural black boxes. There are many ideologies that provide mental shortcuts and comforting explanations of complex systems, some of which genuinely appearing scientific. Most of this is too abstract to be useful/predictive, so as a simple (but certainly not easy) fallback: there is nothing but physics.
     </p>
+
+
 
 </br>
     <p><b>[あつくて つめたい]</b> (atsukute tsumetai) hot and cold</p>
