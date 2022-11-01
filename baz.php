@@ -17,7 +17,7 @@
     
     <?php include "static/nav.php"; ?>
     
-    <h3>baz - macbook pro</h3>
+    <h3>baz</h3>
 
     <img src='static/media/macback.png' />
 

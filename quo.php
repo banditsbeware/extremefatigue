@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="description" contents="">
     <link rel="stylesheet" href="static/style.css" type="text/css">
-    <title>k&#333;ans</title>
+    <title>quotes</title>
     <style>
-      div#koans p {
+      div#quotes p {
       /*width: 200%;*/
         line-height: 1.3;
       /*margin-left: -50%;*/
-        margin-bottom: 60px;
       }
-      div#koans a { 
+      div#quotes a { 
         text-decoration: none;
       }
       p:target {
         background-color: #ffff0033;
+      }
+      p.attr { 
+        color: gray;
+        text-align: right;
+        margin-bottom: 60px;
       }
       
     </style>
@@ -26,8 +30,7 @@
     
     <?php include "static/nav.php"; ?>
 
-    <h3>k - k&#333;ans</h3>
-    <div id="koans"><?php
+    <h3>quotes</h3><div id="quotes"><?php
 
 $k = array(
   [ "I am walking around all alone in this splendid garden that does not belong to me and the gate of which stands wide open for anyone; I dwell here in refreshing but also oppressive loneliness. That is why I’ve been attesting to the existence of this idyllic spot for years… without expecting many strollers to come, however. For what enthralls me and what I experience as beauty is often judged to be dull and dry by others.", "M.C. Escher"
@@ -61,12 +64,9 @@ $k = array(
 
 shuffle($k);
 
-for ($i = 0; $i < count($k); $i++) 
-  echo "<p>".($k[$i][0])." <a href='#".($i+1)."'><sup>[".($i+1)."]</sup></a>";
+for ($i = 0; $i < count($k); $i++) {
+  echo "<p>".($k[$i][0])."</p>";
+  echo "<p class='attr'>".($k[$i][1])."</p>";
+}
 
-echo "</div>";
-for ($i = 0; $i < count($k); $i++) 
-  echo "<p id='".($i+1)."'>[".($i+1)."] ".($k[$i][1])."</p>";
-
-?></body>
-</html>
+?></div></body></html>
