@@ -19,6 +19,7 @@
       }
       p.attr { 
         color: gray;
+        font-size: 0.8em;
         text-align: right;
         margin-bottom: 60px;
       }
