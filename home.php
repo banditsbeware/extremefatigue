@@ -19,7 +19,7 @@
   <?php
     $anims = glob("anim/anim*.html");
     $file = $anims[array_rand($anims, 1)];
-    //$file = "anim/anim2.html";
+//  $file = "anim/anim7.html";
     include $file;    
   ?>
 </html>

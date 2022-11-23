@@ -1,0 +1,71 @@
+<script>
+
+  const u = 20;
+
+  function dot(x, y, colo='black') {
+    c.fillStyle = colo;
+    c.beginPath();
+    c.arc(x, y, 1.5, 0, 2*Math.PI, false);
+    c.fill();
+  }
+
+  function oct(x, y, u, fill) {
+    c.save();
+    c.fillStyle = fill;
+    c.strokeStyle = 'white';
+    c.beginPath();
+    c.moveTo(x+u    , y);
+    c.lineTo(x+u+u  , y);
+    c.lineTo(x+u+u+u, y+u);
+    c.lineTo(x+u+u+u, y+u+u);
+    c.lineTo(x+u+u  , y+u+u+u);
+    c.lineTo(x+u    , y+u+u+u);
+    c.lineTo(x      , y+u+u);
+    c.lineTo(x      , y+u);
+    c.closePath();
+    c.fill();
+    c.stroke();
+    c.restore();
+  }
+
+  a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz)!@#$%^&*( \
+    åß∂ƒøπø®åß∂ƒ∆˚√πåº´®∆µ√πøœ™®ÓØÇÅÎ∏ØÇ„‰‹°‡›‹€ÔÅ'
+  c.font = '20px Times';
+
+  function oct2(x, y) {
+    oct(x, y, u, '#505050');
+    oct(x, y, 0.95*u, '#A00');
+    c.save();
+    c.fillStyle = 'white';
+    c.fillText(a[randInt(0, a.length)], x+(1.2*u), y+(1.8*u));
+    c.restore();
+  }
+
+  let o = 3*u;
+  function octagons() {
+    for (let i=0; i<randInt(2,100); i++) {
+      x = o * randInt(-1, Math.ceil(innerWidth/o));
+      y = o * randInt(-1, Math.ceil(innerHeight/o));
+      oct2(x, y);
+    }
+  }
+
+  let x,y;
+  function animate() {
+    requestAnimationFrame(animate);
+
+    if (Math.random() < 0.01) {
+      c.clearRect(0, 0, canvas.width, canvas.height);
+      octagons();
+    }
+
+    x = o * Math.floor((mouse.x/innerWidth) * (innerWidth/o));
+    y = o * Math.floor((mouse.y/innerHeight) * (innerHeight/o));
+    c.clearRect(x, y, o, o);
+  
+  }
+  
+  octagons();
+  animate();
+
+</script>
