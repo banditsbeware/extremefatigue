@@ -1,0 +1,32 @@
+<script>
+
+  function seg(x, y, p, q) {
+    c.beginPath();
+    c.moveTo(x, y);
+    c.lineTo(p, q);
+    c.stroke();
+  }
+
+  function tree(x, y) {
+    let _x = x, _y = y;
+
+    if (_y > -100) {
+      _x += randInt(-70, 70);
+      _y -= randInt(-10, 100);
+      seg(x, y, _x, _y);
+
+      if (Math.random() < 0.05) {
+        tree(x, y);
+      }
+
+      setTimeout(() => { tree(_x, _y); }, randInt(20, 90));
+    }
+  }
+
+  let b = 0.2 * innerWidth;
+  setInterval(() => {
+    c.clearRect(0, 0, innerWidth, innerHeight);
+    tree(randInt(b, innerWidth-b), innerHeight);
+  }, 2000);
+
+</script>

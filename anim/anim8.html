@@ -1,0 +1,39 @@
+<script>
+
+  function dot(x, y, colo='black') {
+    c.fillStyle = colo;
+    c.beginPath();
+    c.arc(x, y, 1.5, 0, 2*Math.PI, false);
+    c.fill();
+  }
+
+  let dy = randInt(10, 50);
+
+  function tree(x, y) {
+    let _x = x, _y = y;
+
+    c.beginPath();
+    c.moveTo(x, y);
+    while (_y > -dy) {
+      _x += randInt(-50, 50);
+      _y -= dy;
+      c.lineTo(_x, _y);
+      c.stroke();
+
+      if (Math.random() < 0.01) {
+        c.closePath();
+        //dot(_x, _y, 'red');
+        tree(x, y);
+      }
+    }
+  }
+
+  tree(innerWidth/2, innerHeight);
+
+  function animate() {
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+
+</script>

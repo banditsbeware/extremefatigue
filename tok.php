@@ -11,9 +11,7 @@
     
     <?php include "static/nav.php"; ?>
 
-    <h3>tok - tokens</h3>
-
-<!--<p>A carefully selected collection of one-liner philosophies and principles.</p>-->
+    <h3>tokens</h3>
 
     <p><b>[!FF]</b> No Fast Forward</p>
     <p>
