@@ -30,7 +30,7 @@
 
     <?php include "static/nav.php"; ?>
 
-    <h3>b - blog</h3>
+    <h3>blog</h3>
 
     <ul><?php
 

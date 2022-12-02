@@ -65,7 +65,7 @@ $pl = array(
   "digital hardcore, glitchbreak, jungle, hyperpop, footwork, atmospheric drum and bass, weirdcore, braindance, intelligent dance music, experimental, drum and bass"],
     
   ["#include",
-  "several images come to mind while listening to this playlist:<ul><li>the inner thoughts of a fax machine that has just learned it will be discarded</li><li>a detailed account of an electron's journey through a resistive wire</li><li>ultraviolet conversation between</br>two timelike-separated blades of grass</li><li>neutron star core basket-weaving</li><li>being Laplace's demon</li></ul>",
+  "several images come to mind while listening to this playlist:<ul><li>the inner thoughts of a fax machine that has just learned it will be discarded</li><li>a detailed account of an electron's journey through a resistive wire</li><li>ultraviolet conversation between</br>two timelike-separated blades of grass</li><li>neutron star core basket-weaving</li><li>being Laplace's demon</li><li>what Irwin listens to as He transcribes the syntax tree of every sentence of every conversation being had on the planet</li></ul>",
   "Bataille Solaire, Loto Retina, Gora Sou, Metaroom",
   "deconstructed club, spectra, collage pop, weirdcore"],
 
