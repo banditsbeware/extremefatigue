@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="static/style.css" type="text/css">
     <title>quotes</title>
     <style>
+      html {
+        background-color: #7fbadc;
+        overflow-x: hidden;
+      }
       div#quotes p {
       /*width: 200%;*/
-        line-height: 1.3;
+      /*line-height: 1.3;*/
       /*margin-left: -50%;*/
       }
       div#quotes a { 
         text-decoration: none;
-      }
-      p:target {
-        background-color: #ffff0033;
       }
       p.attr { 
         color: gray;
@@ -23,7 +24,17 @@
         text-align: right;
         margin-bottom: 60px;
       }
-      
+      img.cloud {
+        width: 200px;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        animation: 20s linear infinite windy;
+      }
+      @keyframes windy {
+        from { right: -200px; }
+        to   { right: 100%;   }
+      }
     </style>
   </head>
 
@@ -31,7 +42,9 @@
     
     <?php include "static/nav.php"; ?>
 
-    <h3>quotes</h3><div id="quotes"><?php
+    <h3>quotes</h3>
+
+<div id="quotes"><?php
 
 $k = array(
   ["Most people have no idea how beautiful the world is and how much magnificence is revealed in the tiniest things, in some flower, in a stone, in tree bark, or in a birch leaf. The grown-ups, going about their business and worries, and tormenting themselves with all kinds of details, gradually lose the perspective for these riches that children, when they are attentive and good, soon notice and love with their whole heart. And yet the greatest beauty would be achieved if everyone remained in this regard always like attentive and good children, simple and pious in sensitivities, and if people did not lose the capacity for taking pleasure as intensely in a birch leaf or a peacock's feather or the wing of a hooded crow as in a mighty mountain or a splendid palace. What is small is not small in itself, just as that which is great is not &mdash; great. A great and eternal beauty passes through the whole world, and it is distributed fairly over that which is small and that which is large; for in such important and essential matters, no injustice is to be found on earth.","Rainer Maria Rilke"
@@ -71,4 +84,25 @@ for ($i = 0; $i < count($k); $i++) {
   echo "<p class='attr'>".($k[$i][1])."</p>";
 }
 
-?></div></body></html>
+$cloud_files = glob("static/media/clouds/*.png");
+for ($i = 0; $i < 20; $i++) {
+  echo "<img class='cloud' src='".$cloud_files[array_rand($cloud_files, 1)]."'/>";
+}
+
+?></div></body>
+
+<script>
+
+let clouds = document.getElementsByClassName("cloud");
+
+let d, h, hmax = document.getElementsByTagName("body")[0].clientHeight;
+
+for (let c of clouds) {
+  h = Math.random() * hmax;
+  d = Math.random() * 20;
+  c.style.top = `${h}px`;
+  c.style.animationDelay = `-${d}s`;
+}
+
+</script>
+</html>
