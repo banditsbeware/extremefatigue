@@ -5,12 +5,6 @@
     <meta name="description" contents="">
     <link rel="stylesheet" href="static/style.css" type="text/css">
     <title>. . .</title>
-    <style>
-      #id {
-          
-      }
-
-    </style>
   </head>
   <body>
     <div id='top'><?php include "static/nav.php"; ?></div>
@@ -24,6 +18,12 @@
       ?>
     </div></div>
 
+    <div id='buttons'>
+      <img src='static/media/buttons/colors.gif'/>
+      <img src='static/media/buttons/Sailor.gif'/>
+      <a target='_blank' href='https://hekate.neocities.org/'>
+        <img src='static/media/buttons/hekate.png'/></a>
+    </div>
     
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
   </body>

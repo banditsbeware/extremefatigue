@@ -44,4 +44,12 @@ div#updates > div > pre {
   padding-left: 5px;
 }
 
-
+div#buttons {
+  position: absolute;
+  right: 5px;
+  top: 77px;
+}
+div#buttons img { 
+  display: block; 
+  margin-bottom: 3px; 
+}
