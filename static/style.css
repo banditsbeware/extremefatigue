@@ -24,10 +24,24 @@ p#cp {
   bottom: 0;
 }
 
-ul {
-  padding-left: 0;
+ul { padding-left: 0; }
+img { max-width: 100%; }
+
+div#updates {
+  border: 6px outset lightgray;
+  background-color: #f2efffcf;
+  width: 360px;
+  margin-top: 55px;
+}
+div#updates > h4 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 2px dashed gray;
+  box-shadow: 0px 4px 5px gray;
+}
+div#updates > div > pre { 
+  padding-left: 5px;
 }
 
-img {
-  max-width: 100%;
-}
+

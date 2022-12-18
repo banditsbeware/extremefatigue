@@ -5,12 +5,26 @@
     <meta name="description" contents="">
     <link rel="stylesheet" href="static/style.css" type="text/css">
     <title>. . .</title>
+    <style>
+      #id {
+          
+      }
+
+    </style>
   </head>
   <body>
-    <div id='top'>
-      <?php include "static/nav.php"; ?>
-<!--  <h3>home - extreme fatigue</h3> -->
-    </div>
+    <div id='top'><?php include "static/nav.php"; ?></div>
+  
+    <div id='updates'>
+      <h4>Update history</h4>
+      <div style='height: 200px; overflow-y: scroll;'>
+      <?php
+        $output = `git log --pretty=format:"%h %s - %ad" --date=relative`;
+        echo "<pre>$output</pre>";
+      ?>
+    </div></div>
+
+    
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
   </body>
 
