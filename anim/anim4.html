@@ -35,10 +35,11 @@
     update() {
       this.x += 0.05 * this.dx;
       this.y += 0.05 * this.dy;
-      if (this.x > innerWidth) this.x = -this.dx;
-      if (this.y > innerHeight) this.y = -this.dy;
-      if (this.x < -this.dx) this.x = innerWidth;
-      if (this.y < -this.dy) this.y = innerHeight;
+      if (this.x > innerWidth + this.r) this.x = - this.r;
+      if (this.x < - this.r) this.x = innerWidth + this.r;
+
+      if (this.y > innerHeight + this.r) this.y = - this.r;
+      if (this.y < - this.r) this.y = innerHeight + this.r;
       this.draw();
     }
 
