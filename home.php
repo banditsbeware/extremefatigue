@@ -9,6 +9,18 @@
   <body>
     <div id='top'><?php include "static/nav.php"; ?></div>
   
+    <p></p>
+    <div id='thoughts'>
+      <div 
+        style='position: absolute; top: -10px; left: 10px;
+               background-color: #eee; padding: 1px 4px; border: 1px solid black'>On my mind today</div>
+      <?php
+        $thoughts = file("thoughts.txt");
+        echo "<p>".$thoughts[array_rand($thoughts)]."</p>";      
+      ?>
+      <img src='static/media/dave1.png'/>
+    </div>
+
     <div id='updates'>
       <h4>Update history</h4>
       <div style='height: 200px; overflow-y: scroll;'>

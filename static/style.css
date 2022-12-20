@@ -27,6 +27,20 @@ p#cp {
 ul { padding-left: 0; }
 img { max-width: 100%; }
 
+div#thoughts {
+  margin-top: 50px;
+  /* height: 300px; */
+  position: relative;
+}
+div#thoughts p {
+  padding: 18px;
+  background-color: cornsilk;
+  border: 2px solid black;
+}
+div#thoughts img {
+  float: right;
+}
+
 div#updates {
   border: 6px outset lightgray;
   background-color: #f2efffcf;
