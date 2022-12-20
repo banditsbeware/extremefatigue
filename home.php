@@ -35,9 +35,12 @@
       <img src='static/media/buttons/Sailor.gif'/>
       <a target='_blank' href='https://hekate.neocities.org/'>
         <img src='static/media/buttons/hekate.png'/></a>
+      <img src='static/media/buttons/firefox1.gif'/>
     </div>
     
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
+    <img style='width: 100px; position: absolute; bottom: 0; left: 0' src='static/media/buttons/firefox.png'/>
+    <img style='position: absolute; bottom: 10px; right: 10px' src='static/media/buttons/monitor.gif'/>
   </body>
 
   <?php include "anim/_base.html"; ?>
