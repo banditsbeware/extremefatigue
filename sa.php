@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" contents="">
     <link rel="stylesheet" href="static/style.css" type="text/css">
-    <title>blog</title>
+    <title>essay</title>
     <style>
       ul {
         margin-top: 30px;
@@ -30,7 +30,7 @@
 
     <?php include "static/nav.php"; ?>
 
-    <h3>blog</h3>
+    <h3>essay</h3>
 
     <ul><?php
 

@@ -1,86 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../static/style.css" type="text/css">
-    <title>vocab</title>
-    <style>
-      a#back {
-        margin-top: 3px;
-        margin-left: -15px;
-        color: #515151;
-        font-size: 12px;
-        text-decoration: none;
-      }
-      h3 { color: black; }
-      ul { 
-        list-style-type: none; 
-        margin:0; 
-        padding:0;
-      }
-      ul li { margin-bottom: 8px; }
-    </style>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async 
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </head>
-  <body>
-    <a id='back' href='/b.php'>&lt; back</a>
-    <h3>vocab</h3><ul>
-
 <li><b>elegaic </b> of/relating to/involving an elegy or something that expresses similar mournfulness/sorrow</li>
-
 <li><b>assuage </b> make (an unpleasant feeling) less intense; satisfy (an appetite or desire)</li>
-
 <li><b>brogdingnagian </b> huge</li>
-
 <li><b>fascicle </b> a small bundle; one of the parts of a book published in separate sections</li>
-
 <li><b>witness </b> (mathematical logic) a specific value \(t\) to be substituted for variable \(x\) in an existential statement of the form \( \exists x \phantom x \psi (x) \) such that \( \psi (x) \) is true. for example: \(t=2\) witnesses \(\exists x : x \gt 1 \)</li>
-
 <li><b>counterfactual definiteness (CFD) </b> (quantum mechanics) the ability to speak "meaningfully" about the results of measurements that have not been performed ("meaningfully" &rarr; the ability to treat unmeasured results on equal footing with measured results in statistical calculations)</li>
-
 <li><b>screening off </b>if \( P(X | Y, Z) = P(X|Y)\), then \(Y\) is said to <em>screen off</em> \(Z\) from \(X\); \(Y\) renders \(Z\) probabilistically irrelevant to \(X\)</li>
-
 <li><b>locality </b>an object is influenced directly only by its immediate surroundings </li>
-
 <li><b>ossified </b>changed to bone or something resembling bone; (of ideas/attitudes) inflexible or old-fashioned </li>
-
 <li><b>latent </b>(of a quality or state) existing but not yet developed or manifest; hidden; concealed </li>
-
 <li><b>ignominious </b>characterized by or deserving shame/disgrace </li>
-
 <li><b>edify </b>instruct/improve (someone) morally/intellectually </li>
-
 <li><b>kismet </b>distiny/fate </li>
-
 <li><b>indelible </b>(of ink or a pen) making marks that cannot be erased; unforgettable </li>
-
 <li><b>insouciant </b>showing casual lack of concern; indifferent </li>
-
 <li><b>aptronym </b>a name that is peculiarly suited to its owner </li>
-
 <li><b>torpor </b>state of mental/physical inactivity or insensibility; lethargy; apathy </li>
-
 <li><b>dendronization </b>evolution into a tree-like morphology </li>
-
 <li><b>carcinization </b>evolutionary convergence of crustaceans on crab-like forms </li>
-
 <li><b>asemic </b>having no specific semantic content; without the smallest unit of meaning </li>
-
 <li><b>monotonic </b>always increasing or always decreasing; having no change in sign of derivative</li>
-
 <li><b>plebiscite </b>the direct vote of all the members of an electorate on an important public question, such as a change in the constitution</li>
-
 <li><b>provenance </b>chronology of the ownership/location of a historical object</li>
-
 <li><b>busy beaver </b>(theoretical computer science) game that aims at finding a terminating program of a given size that produces the most output possible. design a halting turing maching with alphabet {0, 1} which writes the most 1s on the tape, using only a given set of states. the rules for the n-state game: 1) the machine must have n states in addition to the halting state, and 2) the tape initially contains only 0s. an n<sup>th</sup> busy beaver is a turing maching that wins the n-state game: it attains the largest number of 1s among all other possible n-state turing machines</li>
-
 <li><b>metaball </b>organic-looking n-dimensional isosurfaces, characterized by their ability to meld together when in close proximity to create single, continuous objects</li>
-
 <li><b>paucity </b>fewness; scarcity; dearth</li>
-
-<li>*<b>idiosynchronicity </b>portmanteau of "idiosyncrasy" and "synchronicity"; when the particular tastes, attitudes, habits of two or more people are not necessarily identical but somehow compatible</li>
-
-  </ul></body>
-</html>
-
+<li><b>idiosynchronicity</b>* portmanteau of "idiosyncrasy" and "synchronicity"; when the particular tastes, attitudes, habits of two or more people are not necessarily identical but somehow compatible</li>

@@ -7,7 +7,7 @@
     <title>quotes</title>
     <style>
       html {
-        background-color: #7fbadc;
+        background-color: #cdf8ff;
         overflow-x: hidden;
       }
       div#quotes p {
@@ -47,7 +47,8 @@
 <div id="quotes"><?php
 
 $k = array(
-  ["Most people have no idea how beautiful the world is and how much magnificence is revealed in the tiniest things, in some flower, in a stone, in tree bark, or in a birch leaf. The grown-ups, going about their business and worries, and tormenting themselves with all kinds of details, gradually lose the perspective for these riches that children, when they are attentive and good, soon notice and love with their whole heart. And yet the greatest beauty would be achieved if everyone remained in this regard always like attentive and good children, simple and pious in sensitivities, and if people did not lose the capacity for taking pleasure as intensely in a birch leaf or a peacock's feather or the wing of a hooded crow as in a mighty mountain or a splendid palace. What is small is not small in itself, just as that which is great is not &mdash; great. A great and eternal beauty passes through the whole world, and it is distributed fairly over that which is small and that which is large; for in such important and essential matters, no injustice is to be found on earth.","Rainer Maria Rilke"
+  ["Reality is that which doesn't go away when you stop believing in it.","Philip K. Dick"
+  ],[ "Most people have no idea how beautiful the world is and how much magnificence is revealed in the tiniest things, in some flower, in a stone, in tree bark, or in a birch leaf. The grown-ups, going about their business and worries, and tormenting themselves with all kinds of details, gradually lose the perspective for these riches that children, when they are attentive and good, soon notice and love with their whole heart. And yet the greatest beauty would be achieved if everyone remained in this regard always like attentive and good children, simple and pious in sensitivities, and if people did not lose the capacity for taking pleasure as intensely in a birch leaf or a peacock's feather or the wing of a hooded crow as in a mighty mountain or a splendid palace. What is small is not small in itself, just as that which is great is not &mdash; great. A great and eternal beauty passes through the whole world, and it is distributed fairly over that which is small and that which is large; for in such important and essential matters, no injustice is to be found on earth.","Rainer Maria Rilke"
   ],[ "I am walking around all alone in this splendid garden that does not belong to me and the gate of which stands wide open for anyone; I dwell here in refreshing but also oppressive loneliness. That is why I’ve been attesting to the existence of this idyllic spot for years… without expecting many strollers to come, however. For what enthralls me and what I experience as beauty is often judged to be dull and dry by others.", "M.C. Escher"
   ],[
     "My belief is that the explanations of \"emergent\" phenomena in our brains&mdash; for instance, ideas, hopes, images, analogies, and finally consciousness and free will&mdash; are based on a kind of strange loop, an interaction between levels in which the top level reaches back down towards the bottom level and influences it, while at the same time being itself determined by the bottom level. In other words, the self-reinforcing \"resonance\" between different levels&mdash; quite like the Henkin sentence which, by merely asserting its own provability, actually becomes provable. The self comes into being at the moment is has the power to reflect itself.", "GEB"
