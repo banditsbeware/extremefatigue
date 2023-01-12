@@ -28,6 +28,24 @@
       ?></ul>
     </div>
 
+    <div id='you'>
+      <p>Does this sound like <em>you?</em></p>
+      <ul>
+        <li>you have a great need for other people to like &amp; admire you</li>
+        <li>you have a tendency to be critical of yourself</li>
+        <li>you have lots of unused capacity which you haven't used to your advantage</li>
+        <li>you may have some personality weaknesses but can compensate for them</li>
+        <li>while disciplined &amp; self controlled outside, you tend to be worrisome &amp; insecure inside</li>
+        <li>you prefer some change &amp; variety, are dissatisfied with restrictions/limitations</li>
+        <li>you are an independent thinker &amp; need satisfactory proof of claims by others</li>
+        <li>you find it unwise to be too quick in revealing yourself to others</li>
+        <li>you are sometimes extraverted, but sometimes introverted</li>
+        <li>some of your aspirations tend to be pretty unrealistic</li>
+        <li>security is one of your major goals in life</li>
+      </ul>
+      <p>if so, you may be susceptible to pseudoscientific grifts;</br>please see <a target='_blank' href='https://en.wikipedia.org/wiki/Barnum_effect'>Barnum effect</a></p>
+    </div>
+
     <div id='updates'>
       <h4>Update history</h4>
       <div style='height: 200px; overflow-y: scroll;'>
@@ -45,13 +63,14 @@
       <img src='static/media/buttons/firefox1.gif'/>
       <a target='_blank' href='http://fonts.tom7.com/'>
         <img src='static/media/buttons/dbz-bt2.gif'/></a>
+      <img src='static/media/buttons/firefox.png'/>
     </div>
     
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
-    <img style='width: 100px; position: absolute; bottom: 10px; left: 10px' src='static/media/buttons/firefox.png'/>
-    <img style='position: absolute; bottom: 10px; right: 10px' src='static/media/buttons/monitor.gif'/>
+    <img style='width: 88px; position: fixed; bottom: 10px; right: 15px' src='static/media/buttons/monitor.gif'/>
   </body>
 
+<!--
   <?php include "anim/_base.html"; ?>
   
   <?php
@@ -60,4 +79,5 @@
 //  $file = "anim/anim9.html";
     include $file;    
   ?>
+-->
 </html>

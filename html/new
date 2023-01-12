@@ -22,7 +22,7 @@ HTML="<!DOCTYPE html>
     </style>
   </head>
   <body>
-    <a id='back' href='/b.php'>&lt; back</a>
+    <a id='back' href='/sa.php'>&lt; back</a>
     <h3>$title</h3>
 
   </body>

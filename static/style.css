@@ -17,16 +17,18 @@ div#top * {
 }
 
 body {
+  height: 100%;
   max-width: 60ch;
   padding: 3em 1em;
-	margin: auto;
+	margin-left: 10%;
 }
 
 p#cp {
   text-align: center;
   font-size: 8px;
-  position: fixed;
-  bottom: 0;
+  margin-top: 50px;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 img { max-width: 100%; }
@@ -61,6 +63,13 @@ div#studytopics li {
   list-style-type: "* ";
 }
 
+div#you {
+  margin-top: 10px;
+  padding: 11px;
+  background-color: #d5dff9;
+  color: #12176a;
+}
+
 div#updates {
   /* border: 6px outset lightgray; */
   background-color: #f2efff;
@@ -75,14 +84,16 @@ div#updates > h4 {
 }
 div#updates > div > pre { 
   padding-left: 5px;
+  overflow-x: hidden;
 }
 
 div#buttons {
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 77px;
 }
 div#buttons img { 
   display: block; 
   margin-bottom: 3px; 
+  width: 88px;
 }
