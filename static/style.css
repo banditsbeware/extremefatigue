@@ -1,6 +1,11 @@
+@font-face {
+  font-family: Chicago;
+  src: url('ChicagoFLF.ttf');
+}
+
 html {
   box-sizing: border-box;
-  font-family: "Verdana";
+  /* font-family: "Verdana"; */
   font-size: 0.9em;
   color: #3c3c3c;
 	background-color: #f5f5ff;
@@ -24,35 +29,49 @@ p#cp {
   bottom: 0;
 }
 
-ul { padding-left: 0; }
 img { max-width: 100%; }
 
 div#thoughts {
   margin-top: 50px;
   /* height: 300px; */
   position: relative;
+  background-image: url('media/thought-cloud.png');
+  background-position: center;
+  width: 600px;
+  height: 100px;
 }
 div#thoughts p {
-  padding: 18px;
-  background-color: cornsilk;
-  border: 2px solid black;
+  padding: 30px;
+  height: 34px;
+  text-align: center;
 }
 div#thoughts img {
+  margin-top: -20px;
   float: right;
 }
 
+div#studytopics {
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: white;
+  font-family: Chicago;
+}
+div#studytopics li {
+  list-style-type: "* ";
+}
+
 div#updates {
-  border: 6px outset lightgray;
-  background-color: #f2efffcf;
-  width: 360px;
+  /* border: 6px outset lightgray; */
+  background-color: #f2efff;
+  width: 100%;
   margin-top: 55px;
 }
 div#updates > h4 {
   text-align: center;
   margin: 0;
   padding: 10px 0;
-  border-bottom: 2px dashed gray;
-  box-shadow: 0px 4px 5px gray;
+  border: 1px solid gray;
 }
 div#updates > div > pre { 
   padding-left: 5px;
