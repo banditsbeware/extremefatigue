@@ -11,14 +11,21 @@
   
     <p></p>
     <div id='thoughts'>
-      <div 
-        style='position: absolute; top: -10px; left: 10px;
-               background-color: #eee; padding: 1px 4px; border: 1px solid black'>On my mind today</div>
       <?php
         $thoughts = file("thoughts.txt");
         echo "<p>".$thoughts[array_rand($thoughts)]."</p>";      
       ?>
       <img src='static/media/dave1.png'/>
+    </div>
+
+    <div id='studytopics'>
+      <h2>Interesting topics</h2>
+      <ul><?php
+        $topics = file("studytopics.txt");
+        shuffle($topics);
+        for ($i=0; $i<10; $i++)
+          echo "<li>".$topics[$i]."</li>";
+      ?></ul>
     </div>
 
     <div id='updates'>
@@ -36,10 +43,12 @@
       <a target='_blank' href='https://hekate.neocities.org/'>
         <img src='static/media/buttons/hekate.png'/></a>
       <img src='static/media/buttons/firefox1.gif'/>
+      <a target='_blank' href='http://fonts.tom7.com/'>
+        <img src='static/media/buttons/dbz-bt2.gif'/></a>
     </div>
     
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
-    <img style='width: 100px; position: absolute; bottom: 0; left: 0' src='static/media/buttons/firefox.png'/>
+    <img style='width: 100px; position: absolute; bottom: 10px; left: 10px' src='static/media/buttons/firefox.png'/>
     <img style='position: absolute; bottom: 10px; right: 10px' src='static/media/buttons/monitor.gif'/>
   </body>
 
