@@ -28,7 +28,7 @@
       ?></ul>
     </div>
 
-    <div id='you'>
+<!--<div id='you'>
       <p>Does this sound like <em>you?</em></p>
       <ul>
         <li>you have a great need for other people to like &amp; admire you</li>
@@ -43,8 +43,8 @@
         <li>some of your aspirations tend to be pretty unrealistic</li>
         <li>security is one of your major goals in life</li>
       </ul>
-      <p>if so, you may be susceptible to pseudoscientific grifts;</br>please see <a target='_blank' href='https://en.wikipedia.org/wiki/Barnum_effect'>Barnum effect</a></p>
-    </div>
+      <p><small>if so, you may be susceptible to pseudoscientific grifts; please see <a target='_blank' href='https://en.wikipedia.org/wiki/Barnum_effect'>Barnum effect</a></small></p>
+    </div>-->
 
     <div id='updates'>
       <h4>Update history</h4>
@@ -56,14 +56,38 @@
     </div></div>
 
     <div id='buttons'>
-      <img src='static/media/buttons/colors.gif'/>
-      <img src='static/media/buttons/Sailor.gif'/>
-      <a target='_blank' href='https://hekate.neocities.org/'>
-        <img src='static/media/buttons/hekate.png'/></a>
-      <img src='static/media/buttons/firefox1.gif'/>
-      <a target='_blank' href='http://fonts.tom7.com/'>
-        <img src='static/media/buttons/dbz-bt2.gif'/></a>
-      <img src='static/media/buttons/firefox.png'/>
+      <?php
+        $buttons = glob('static/media/buttons/*');
+        $links = [
+          "https://cyber.dabamos.de/88x31/index.html", // 88x31
+          "", // Sailor
+          "", // bestwithmie
+          "https://www.youtube.com/watch?v=mQ1gzLAztK8&t=1918s", // beyes
+          "", // chillsoft
+          "https://coolors.co", // colors
+          "https://catsystemcorp.bandcamp.com/", // corp
+          "http://fonts.tom7.com/", // dbz-bt2
+          "https://pigeon.dog/", // dontklick
+          "", // email
+          "", // firefox.png
+          "", // firefox1
+          "https://hekate.neocities.org/", // hekate
+          "", // latex
+          "", // miku
+          "", // monitor
+          "", // pbm
+          "", // php
+          "", // spotify
+          "", // thevoid
+          "", // vim
+          "", // vocaloid
+        ];
+        for ($i = 0; $i < count($buttons); $i++) {
+          echo "<a target='_blank' href='".$links[$i]."'>
+                  <img src='".$buttons[$i]."'/></a>";
+        }
+
+      ?>
     </div>
     
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 

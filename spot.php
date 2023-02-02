@@ -49,10 +49,15 @@ $pl = array(
   "Jinsang, tajima hal, Flavors, Family Event, Ill Sugi, your best friend jippy, Tomppabeats, oofoe, Aaronmaxwell, Saib, Ajmw, Byson, Aerate, 90sFlav, Made in M, wuf, Miraa., idntrmmber",
   "lo-fi, glitch, beats, abstract beats, jazz"],
 
-  [".iso", 
-   "this is the description of .iso.",
+  ["tunnel", 
+   "Music for moving through tunnels at high speeds with low visibility.</br>the air gets colder as depth increases.",
   "// TODO",
-  "// TODO"],
+  "jungle, house, techno"],
+
+  [".iso", 
+   "Music which longs for human connections. Somewhat nostalgic. makes it feel like one could vanish and all their loved ones would be unaffected.",
+  "// TODO",
+  "vaporwave, disco"],
 
   ["𝔸ℝℂℍ𝕀𝕋𝔼ℂ𝕋𝕌ℝ𝔼",
    "A playlist for a destroyed world. </br>the sounds of the first year after all humans have vanished",
