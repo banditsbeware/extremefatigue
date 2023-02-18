@@ -13,7 +13,7 @@
 
     <h3>tokens</h3>
 
-    <p><b>[!FF]</b> No Fast Forward</p>
+    <p><b>[!>>]</b> No Fast Forward</p>
     <p>
 It is tempting (and sometimes unavoidable/rational) to wish for time to pass faster when one is in an uncomfortable situation. "Doing X to pass the time" and the celebration of a time period appearing to "go by fast" are very common expressions, which presumably reflect subconscious tendencies to avoid boredom or more severe forms of suffering. Acknowledging the finite amount of time we have, though, I try to catch these thoughts and take the opportunity to sink deeper into the experience of the world around me; there is infinite detail in every situation, and so fast-forwarding through time wastes experience, which is irreplaceable.
     </p>

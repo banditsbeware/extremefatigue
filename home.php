@@ -57,36 +57,33 @@
 
     <div id='buttons'>
       <?php
-        $buttons = glob('static/media/buttons/*');
-        $links = [
-          "https://cyber.dabamos.de/88x31/index.html", // 88x31
-          "", // Sailor
-          "", // bestwithmie
-          "https://www.youtube.com/watch?v=mQ1gzLAztK8&t=1918s", // beyes
-          "", // chillsoft
-          "https://coolors.co", // colors
-          "https://catsystemcorp.bandcamp.com/", // corp
-          "http://fonts.tom7.com/", // dbz-bt2
-          "https://pigeon.dog/", // dontklick
-          "", // email
-          "", // firefox.png
-          "", // firefox1
-          "https://hekate.neocities.org/", // hekate
-          "", // latex
-          "", // miku
-          "", // monitor
-          "", // pbm
-          "", // php
-          "", // spotify
-          "", // thevoid
-          "", // vim
-          "", // vocaloid
+        $buttons = [
+          ["88x31.gif", "https://cyber.dabamos.de/88x31/index.html"], 
+          ["Sailor.gif", ""], 
+          ["bestwithmie.gif", ""], 
+          ["beyes.gif", "https://www.youtube.com/watch?v=mQ1gzLAztK8&t=1918s"], 
+          ["chillsoft.gif", ""], 
+          ["colors.gif", "https://coolors.co"], 
+          ["corp.gif", "https://catsystemcorp.bandcamp.com/"], 
+          ["dbz-bt2.gif", "http://fonts.tom7.com/"], 
+          ["dontklick.gif", "https://pigeon.dog/"], 
+          ["email.gif", ""], 
+          ["firefox.png", ""], 
+          ["firefox1.gif", ""], 
+          ["hekate.png", "https://hekate.neocities.org/"],
+          ["latex.gif", ""], 
+          ["miku.gif", ""], 
+          ["pbm.gif", ""], 
+          ["php.gif", ""], 
+          ["spotify.gif", "https://open.spotify.com/user/1215017379?si=c971c7bf646f4156"], 
+          ["thevoid.gif", ""], 
+          ["vim.gif", ""], 
+          ["vocaloid.gif", ""], 
         ];
         for ($i = 0; $i < count($buttons); $i++) {
-          echo "<a target='_blank' href='".$links[$i]."'>
-                  <img src='".$buttons[$i]."'/></a>";
+          echo "<a target='_blank' href='".$buttons[$i][1]."'>
+                  <img src='static/media/buttons/".$buttons[$i][0]."'/></a>";
         }
-
       ?>
     </div>
     

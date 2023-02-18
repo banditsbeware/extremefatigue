@@ -39,7 +39,7 @@
 
   <h3>spotify playlists</h3>
 
-  <p>see <a href='https://open.spotify.com/user/1215017379?si=77f094e595534463'>my spotify profile</a>, the individual playlist links kept breaking on here</p>
+  <p>see <a href='https://open.spotify.com/user/1215017379?si=77f094e595534463'>my spotify profile</a></p>
 
 <?php
 
