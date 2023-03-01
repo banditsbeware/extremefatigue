@@ -1,0 +1,77 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+div#declarations {
+    grid-column: 5/9;
+    grid-row: 2;
+}
+
+
+div#thoughts {
+    grid-column: 10/11;
+    grid-row: 2;
+    margin-top: 50px;
+    position: relative;
+    background-image: url('media/thought-cloud.png');
+    background-position: center;
+    width: 600px;
+    height: 100px;
+}
+div#thoughts p {
+    padding: 30px;
+    height: 34px;
+    text-align: center;
+}
+div#thoughts img {
+    margin-top: -20px;
+    float: right;
+}
+
+
+div#studytopics {
+    grid-column: 1/6;
+    grid-row: 3;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Chicago;
+}
+div#studytopics li {
+    list-style-type: "* ";
+}
+
+
+div#updates {
+    grid-column: 10;
+    grid-row: 5;
+    /* border: 6px outset lightgray; */
+    background-color: #f2efff;
+    width: 100%;
+    margin-top: 55px;
+}
+div#updates > h4 {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    border: 1px solid gray;
+}
+div#updates > div > pre { 
+    padding-left: 5px;
+    overflow-x: hidden;
+}
+
+
+div#buttons {
+    grid-column: 12;
+    grid-row: 1/10;
+    width: 88px;
+}
+div#buttons img { 
+  display: block; 
+  margin-bottom: 3px; 
+  width: 88px;
+}

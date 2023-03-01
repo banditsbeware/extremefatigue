@@ -1,6 +1,6 @@
 <style>
   div#nav { 
-/*  margin: 3px auto;  */
+    margin: 15px;
     color: #515151;
     font-size: 14px;
   } 

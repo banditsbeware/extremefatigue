@@ -11,17 +11,9 @@ html {
 	background-color: #f5f5ff;
 }
 
-div#top * { 
-  background-color: #f5f5ff;
-  width: fit-content;
-}
+div#top { margin: 15px; }
 
-body {
-  height: 100%;
-  max-width: 60ch;
-  padding: 3em 1em;
-	margin-left: 10%;
-}
+main { height: 100%; }
 
 p#cp {
   text-align: center;
@@ -33,36 +25,6 @@ p#cp {
 
 img { max-width: 100%; }
 
-div#thoughts {
-  margin-top: 50px;
-  /* height: 300px; */
-  position: relative;
-  background-image: url('media/thought-cloud.png');
-  background-position: center;
-  width: 600px;
-  height: 100px;
-}
-div#thoughts p {
-  padding: 30px;
-  height: 34px;
-  text-align: center;
-}
-div#thoughts img {
-  margin-top: -20px;
-  float: right;
-}
-
-div#studytopics {
-  padding: 10px;
-  width: 80%;
-  border-radius: 10px;
-  background-color: white;
-  font-family: Chicago;
-}
-div#studytopics li {
-  list-style-type: "* ";
-}
-
 div#you {
   margin-top: 10px;
   padding: 11px;
@@ -70,30 +32,4 @@ div#you {
   color: #12176a;
 }
 
-div#updates {
-  /* border: 6px outset lightgray; */
-  background-color: #f2efff;
-  width: 100%;
-  margin-top: 55px;
-}
-div#updates > h4 {
-  text-align: center;
-  margin: 0;
-  padding: 10px 0;
-  border: 1px solid gray;
-}
-div#updates > div > pre { 
-  padding-left: 5px;
-  overflow-x: hidden;
-}
 
-div#buttons {
-  position: absolute;
-  right: 15px;
-  top: 77px;
-}
-div#buttons img { 
-  display: block; 
-  margin-bottom: 3px; 
-  width: 88px;
-}
