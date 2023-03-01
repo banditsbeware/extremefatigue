@@ -12,6 +12,10 @@
     <title>dictionary</title>
 
     <style>
+      body {
+        max-width: 60ch;
+        margin-left: 25px;
+      }
       a#back {
         margin-top: 3px;
         margin-left: -15px;
@@ -46,7 +50,8 @@
 
     <?php include "static/nav.php"; ?>
 
-    <h3><small style="font-size:x-small">my personal</small> dictionary</h3>
+    <h3>dictionary</h3>
+    <p>terms I found in places and thought I needed to know what they meant. they are in lexicographical order but eventually i will add a toggle for chronological (by date found) order which i think is interesting</p>
 
 <!--
 - filenames in dict/ are dates in YY-MM format, organizing by month.

@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="static/style.css" type="text/css">
     <title>essay</title>
     <style>
+      body {
+        max-width: 70ch;
+      }
       ul {
         margin-top: 30px;
         list-style-type: none;
