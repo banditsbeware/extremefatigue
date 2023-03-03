@@ -4,37 +4,17 @@ main {
     grid-auto-rows: minmax(100px, auto);
 }
 
+div.maincolumn {
+    grid-column: 2/10;
+}
+
 
 div#declarations {
-    grid-column: 5/9;
-    grid-row: 2;
-}
-
-
-div#thoughts {
-    grid-column: 10/11;
-    grid-row: 2;
-    margin-top: 50px;
-    position: relative;
-    background-image: url('media/thought-cloud.png');
-    background-position: center;
-    width: 600px;
-    height: 100px;
-}
-div#thoughts p {
-    padding: 30px;
-    height: 34px;
-    text-align: center;
-}
-div#thoughts img {
-    margin-top: -20px;
-    float: right;
+    height: 20ch;
 }
 
 
 div#studytopics {
-    grid-column: 1/6;
-    grid-row: 3;
     padding: 10px;
     border-radius: 10px;
     background-color: white;
@@ -46,8 +26,6 @@ div#studytopics li {
 
 
 div#updates {
-    grid-column: 10;
-    grid-row: 5;
     /* border: 6px outset lightgray; */
     background-color: #f2efff;
     width: 100%;
@@ -62,6 +40,36 @@ div#updates > h4 {
 div#updates > div > pre { 
     padding-left: 5px;
     overflow-x: hidden;
+}
+
+
+div#barnum {
+  margin-top: 10px;
+  padding: 11px;
+  background-color: #d5dff9;
+  color: #12176a;
+}
+
+
+div#thoughts {
+    margin-top: 50px;
+    position: relative;
+}
+div#thoughts p {
+    background-image: url('media/thought-cloud.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 600px;
+    padding: 34px;
+    height: 40px;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+div#thoughts img {
+    margin-top: -20px;
+    float: right;
 }
 
 
