@@ -7,13 +7,14 @@
     <title>quotes</title>
     <style>
       html {
-        background-color: #cdf8ff;
+        background-color: #a3b9d7;
         overflow-x: hidden;
       }
-      div#quotes p {
-      /*width: 200%;*/
-      /*line-height: 1.3;*/
-      /*margin-left: -50%;*/
+      div.quote {
+        border: 4px outset azure;
+        background-color: #f5f5ff;
+        padding: 5px 15px;
+        margin-bottom: 30px;
       }
       div#quotes a { 
         text-decoration: none;
@@ -22,7 +23,6 @@
         color: gray;
         font-size: 0.8em;
         text-align: right;
-        margin-bottom: 60px;
       }
       img.cloud {
         width: 200px;
@@ -41,6 +41,8 @@
   <body>
     
     <?php include "static/nav.php"; ?>
+
+    <main>
 
     <h3>quotes</h3>
 
@@ -87,8 +89,10 @@ $k = array(
 shuffle($k);
 
 for ($i = 0; $i < count($k); $i++) {
+  echo "<div class='quote'>";
   echo "<p>".($k[$i][0])."</p>";
   echo "<p class='attr'>".($k[$i][1])."</p>";
+  echo "</div>";
 }
 
 $cloud_files = glob("static/media/clouds/*.png");
@@ -96,7 +100,10 @@ for ($i = 0; $i < 20; $i++) {
   echo "<img class='cloud' src='".$cloud_files[array_rand($cloud_files, 1)]."'/>";
 }
 
-?></div></body>
+?></div>
+
+</main>
+</body>
 
 <script>
 

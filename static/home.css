@@ -1,4 +1,11 @@
+@font-face {
+  font-family: Chicago;
+  src: url('ChicagoFLF.ttf');
+}
+
 main {
+    height: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(100px, auto);

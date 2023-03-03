@@ -6,12 +6,10 @@
     <link rel="stylesheet" href="static/style.css" type="text/css">
     <title>essay</title>
     <style>
-      body {
-        max-width: 70ch;
-      }
       ul {
         margin-top: 30px;
         list-style-type: none;
+        padding: 0;
       }
       div.month {
         padding: 2px;
@@ -33,31 +31,35 @@
 
     <?php include "static/nav.php"; ?>
 
-    <h3>essay</h3>
+    <main>
 
-    <ul><?php
+      <h3>essay</h3>
 
-      $files = glob("html/*.html");
-      $_m = -1;
+      <ul><?php
 
-      foreach (array_reverse($files) as $filename) {
+        $files = glob("html/*.html");
+        $_m = -1;
 
-        $fn = substr($filename, 14, -5);
-        $d = date_parse( substr($filename, 5, 8) );
-        $m = $d["month"]; $y = substr($d["year"], 2);
+        foreach (array_reverse($files) as $filename) {
+
+          $fn = substr($filename, 14, -5);
+          $d = date_parse( substr($filename, 5, 8) );
+          $m = $d["month"]; $y = substr($d["year"], 2);
 
 
-        if ($m != $_m) {
-          $month = date('M', mktime(0, 0, 0, $m, 10));
-          echo "</div><div class='month'>";
-          echo "<em class='month-label'>$month '$y</em>";
-          $_m = $m;
+          if ($m != $_m) {
+            $month = date('M', mktime(0, 0, 0, $m, 10));
+            echo "</div><div class='month'>";
+            echo "<em class='month-label'>$month '$y</em>";
+            $_m = $m;
+          }
+
+          echo "<li><a href='/$filename'>$fn</a></li>";
         }
+        echo "</div>";
+      ?></ul>
 
-        echo "<li><a href='/$filename'>$fn</a></li>";
-      }
-      echo "</div>";
-    ?></ul>
+    </main>
 
   </body>
 </html>

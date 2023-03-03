@@ -11,6 +11,8 @@
     
     <?php include "static/nav.php"; ?>
 
+    <main>
+
     <h3>tokens</h3>
 
     <p><b>[!>>]</b> No Fast Forward</p>
@@ -32,6 +34,8 @@ It is tempting (and sometimes unavoidable/rational) to wish for time to pass fas
 Emotions are influenced by a large (possibly unknown) number of factors, and so it is often impossible to completely explain the reasoning behind why one is feeling x or y. Emotions also exist on various spectra, where one may be said to be the "opposite" of another; perhaps most convincingly: happy and sad. There are many more words to describe feelings, with various levels of complexity/detail/specificity/context. Joy, amusement, elation, bliss (happy); dismay, grief, melancholy, anguish (sad); exasperation, fury, spite, vengefulness (anger); horror, panic, anxiety, apprehension (fear). Each word has a subtly different meaning, applicable to a different set of situations. I think it is an error to "fix" one's emotions by eliminating the experience of "bad" ones and only pursuing "good" ones. Part of the beauty of being human is acknowledging our subjectivity to the entire space of possible emotions. Some (perhaps 50%) of them suck, but the only way to fully appreciate those that <em>don't</em> is to experience everything.
 
     </p>
+
+    </main>
 
     <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
 

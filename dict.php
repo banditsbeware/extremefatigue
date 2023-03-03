@@ -12,10 +12,6 @@
     <title>dictionary</title>
 
     <style>
-      body {
-        max-width: 60ch;
-        margin-left: 25px;
-      }
       a#back {
         margin-top: 3px;
         margin-left: -15px;
@@ -50,29 +46,31 @@
 
     <?php include "static/nav.php"; ?>
 
-    <h3>dictionary</h3>
-    <p>terms I found in places and thought I needed to know what they meant. they are in lexicographical order but eventually i will add a toggle for chronological (by date found) order which i think is interesting</p>
+    <main>
+      <h3>dictionary</h3>
+      <p>terms I found in places and thought I needed to know what they meant. they are in lexicographical order but eventually i will add a toggle for chronological (by date found) order which i think is interesting</p>
 
-<!--
-- filenames in dict/ are dates in YY-MM format, organizing by month.
-- items are accessed by _line_, so long items (e.g. with an image, sublist, math equation)
-    must be squashed onto one line.
-- all contents are concatenated and displayed in alphabetical order.
--->
+  <!--
+  - filenames in dict/ are dates in YY-MM format, organizing by month.
+  - items are accessed by _line_, so long items (e.g. with an image, sublist, math equation)
+      must be squashed onto one line.
+  - all contents are concatenated and displayed in alphabetical order.
+  -->
 
-    <ul id='dict'><?php
-  
-      $files = glob("dict/*");
-      $dict = array();
-      
-      for ($k = 0; $k < count($files); $k++) {
-        $dict = array_merge( $dict, file($files[$k]) );
-      }
+      <ul id='dict'><?php
+    
+        $files = glob("dict/*");
+        $dict = array();
+        
+        for ($k = 0; $k < count($files); $k++) {
+          $dict = array_merge( $dict, file($files[$k]) );
+        }
 
-      sort( $dict, SORT_NATURAL | SORT_FLAG_CASE );
-      for ($i = 0; $i < count($dict); $i++) echo $dict[$i];
+        sort( $dict, SORT_NATURAL | SORT_FLAG_CASE );
+        for ($i = 0; $i < count($dict); $i++) echo $dict[$i];
 
-    ?></ul>
+      ?></ul>
+    </main>
 
   </body>
 </html>

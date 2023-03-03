@@ -37,6 +37,8 @@
   
   <?php include "static/nav.php"; ?>
 
+  <main>
+
   <h3>spotify playlists</h3>
 
   <p>see <a href='https://open.spotify.com/user/1215017379?si=77f094e595534463'>my spotify profile</a></p>
@@ -100,6 +102,7 @@ for ($i = 0; $i < count($pl); $i++) {
 }
 
 ?>
+  </main>
   <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
 </body>
 <script>

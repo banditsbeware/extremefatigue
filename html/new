@@ -21,11 +21,11 @@ HTML="<!DOCTYPE html>
       h3 { color: black; }
     </style>
   </head>
-  <body>
+  <main>
     <a id='back' href='/sa.php'>&lt; back</a>
     <h3>$title</h3>
 
-  </body>
+  </main>
 </html>
 "
 
