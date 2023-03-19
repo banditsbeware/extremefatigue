@@ -44,7 +44,7 @@
 
   <body>
 
-    <?php include "static/nav.php"; ?>
+    <?php include "src/nav.php"; ?>
 
     <main>
       <h3>dictionary</h3>

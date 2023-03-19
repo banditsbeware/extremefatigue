@@ -8,7 +8,7 @@ main {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    /* grid-auto-rows: minmax(100px, auto); */
 }
 
 div.maincolumn {
@@ -58,25 +58,17 @@ div#barnum {
 }
 
 
-div#thoughts {
+div#floor {
+    height: 100px;
+    background-image: url('media/floor1.gif');
+    background-repeat: repeat-x;
+    background-position-y: top;
+}
+p#thought {
+    font-family: Chicago;
     margin-top: 50px;
-    position: relative;
-}
-div#thoughts p {
-    background-image: url('media/thought-cloud.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 600px;
-    padding: 34px;
-    height: 40px;
-    text-align: center;
-    font-size: small;
-    font-style: italic;
-}
-div#thoughts img {
-    margin-top: -20px;
-    float: right;
+    margin-left: 123px;
+    margin-bottom: -110px;
 }
 
 

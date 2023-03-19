@@ -8,12 +8,14 @@
     <title>%</title>
   </head>
   <body>
-    <?php include "static/nav.php"; ?>
+    <?php include "src/nav.php"; ?>
     <main>
         
         <div id='main-header' class='maincolumn'>
             <pre><?php include "static/banner.txt"; ?></pre>
         </div>
+
+        <?php // include("src/db.php"); ?>
 
         <div id='declarations' class='maincolumn'>
             <?php
@@ -50,14 +52,20 @@
           ?>
         </div></div>
 
-        <div id='barnum' class='maincolumn'> <?php include "static/barnum.html"; ?> </div>
-
-        <div id='thoughts' class='maincolumn'>
-          <?php
-            $thoughts = file("static/thoughts.txt");
-            echo "<p>".$thoughts[array_rand($thoughts)]."</p>";      
-          ?>
-          <img src='static/media/dave1.png'/>
+        <div id='barnum' class='maincolumn'>
+          <p>Does this sound like <em>you?</em></p> <ul>
+          <li>you have a great need for other people to like &amp; admire you</li>
+          <li>you have a tendency to be critical of yourself</li>
+          <li>you have lots of unused capacity which you haven't used to your advantage</li>
+          <li>you may have some personality weaknesses but can compensate for them</li>
+          <li>while disciplined &amp; self controlled outside, you tend to be worrisome &amp; insecure inside</li>
+          <li>you prefer some change &amp; variety, are dissatisfied with restrictions/limitations</li>
+          <li>you are an independent thinker &amp; need satisfactory proof of claims by others</li>
+          <li>you find it unwise to be too quick in revealing yourself to others</li>
+          <li>you are sometimes extraverted, but sometimes introverted</li>
+          <li>some of your aspirations tend to be pretty unrealistic</li>
+          <li>security is one of your major goals in life</li>
+          </ul> <p><small>if so, you may be susceptible to pseudoscientific grifts; please see <a target='_blank' href='https://en.wikipedia.org/wiki/Barnum_effect'>Barnum effect</a></small></p>
         </div>
 
         <div id='buttons' class='maincolumn'>
@@ -94,8 +102,16 @@
         
         <img style='width: 88px; position: fixed; bottom: 10px; right: 15px' src='static/media/buttons/monitor.gif'/>
     </main>
-    <p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p> 
   </body>
+
+    <?php
+      $thoughts = file("static/thoughts.txt");
+      echo "<p id='thought'>".$thoughts[array_rand($thoughts)]."</br>.</br>.</br>.</p>";      
+    ?>
+    <img style='margin-left: -50px; margin-bottom: -12px' src='static/media/walk1.gif'/>
+    <div id='floor'></div>
+    <!--<p id='cp'>&#169; extreme fatigue <?php echo date("Y"); ?></p>-->
+
 
   <?php // include "anim/_base.html"; ?>
   
