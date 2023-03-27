@@ -48,26 +48,23 @@
 
     <main>
       <h3>dictionary</h3>
-      <p>terms I found in places and thought I needed to know what they meant. they are in lexicographical order but eventually i will add a toggle for chronological (by date found) order which i think is interesting</p>
-
-  <!--
-  - filenames in dict/ are dates in YY-MM format, organizing by month.
-  - items are accessed by _line_, so long items (e.g. with an image, sublist, math equation)
-      must be squashed onto one line.
-  - all contents are concatenated and displayed in alphabetical order.
-  -->
 
       <ul id='dict'><?php
     
-        $files = glob("dict/*");
-        $dict = array();
-        
-        for ($k = 0; $k < count($files); $k++) {
-          $dict = array_merge( $dict, file($files[$k]) );
-        }
+        include 'src/db.php';
 
-        sort( $dict, SORT_NATURAL | SORT_FLAG_CASE );
-        for ($i = 0; $i < count($dict); $i++) echo $dict[$i];
+        $pdo = new PDO('sqlite:database.db');
+        $dict = read_dict($pdo);
+        
+        foreach ($dict as $row) {
+          echo "<li title='[".$row["id"]."] ".$row["date"]."'>"
+              ."<b>".$row["term"]."</b> "
+              .$row["defn"]."</li>";
+        }
+        //  print_r("[". $row["id"] ."] ". $row["date"] ." <b>". $row["term"] ."</b>: ". $row["defn"] ."</br>");
+
+        // sort( $dict, SORT_NATURAL | SORT_FLAG_CASE );
+        // for ($i = 0; $i < count($dict); $i++) echo $dict[$i];
 
       ?></ul>
     </main>

@@ -15,8 +15,6 @@
             <pre><?php include "static/banner.txt"; ?></pre>
         </div>
 
-        <?php // include("src/db.php"); ?>
-
         <div id='declarations' class='maincolumn'>
             <?php
                 $init = ["int", "float", "double", "long", "char", "bool"];
