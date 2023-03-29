@@ -5,6 +5,7 @@ html {
   font-size: 0.9em;
   color: #3c3c3c;
 	background-color: #f5f5ff;
+  quotes: "\201D" "\201D";
 }
 
 img { max-width: 100%; }
