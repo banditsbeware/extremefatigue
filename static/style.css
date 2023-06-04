@@ -28,3 +28,13 @@ p#cp {
   font-size: 8px;
   margin-top: 50px;
 }
+
+/* @media only screen and (max-width: 600px) {
+    html {
+      font-size: 1.1em;
+      background-color: blanchedalmond;
+    }
+    main {
+      max-width: 100%;
+    }
+} */
