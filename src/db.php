@@ -29,6 +29,8 @@ function dict_remove($pdo, $id) {
 
 }
 
+function hello_world() { echo "<p style='color:blue'>hello world!</p>"; }
+
 function read_dict($pdo) {
     $stmt = $pdo->prepare("SELECT * FROM dict;");
     $stmt->execute();

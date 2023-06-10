@@ -92,8 +92,11 @@
               ["vocaloid.gif", ""], 
             ];
             for ($i = 0; $i < count($buttons); $i++) {
-              echo "<a target='_blank' href='".$buttons[$i][1]."'>
-                      <img src='static/media/buttons/".$buttons[$i][0]."'/></a>";
+              if (strlen($buttons[$i][1]) > 0) 
+                echo "<a target='_blank' href='".$buttons[$i][1]."'>
+                        <img src='static/media/buttons/".$buttons[$i][0]."'/></a>";
+              else
+                echo "<a><img src='static/media/buttons/".$buttons[$i][0]."'/></a>";
             }
           ?>
         </div>
