@@ -12,14 +12,41 @@ main {
 }
 
 div.maincolumn {
-    grid-column: 2/10;
+    grid-column: 1/8;
 }
+span.nrcl { color: darkgray; }
+span.comment { color: gray; }
+span.type { color: blue; font-style: italic; }
 
-
-div#declarations {
-    height: 20ch;
+span.salink, a.salink, a.salink:visited { 
+    color: black; 
+    text-decoration: none; 
 }
+a.salink:hover { text-decoration: underline; }
 
+
+div#declarations { height: 20ch; }
+
+div#essay-list {
+}
+div#essay-list ul {
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+div#essay-list div.month {
+    padding: 2px;
+    background-color: #ccccff;
+}
+div#essay-list div.month:nth-child(odd) {
+    background-color: #ddddff;
+}
+div#essay-list em.month-label {
+    float: right;
+}
+div#essay-list li a {
+    text-decoration: none;
+}
 
 div#studytopics {
     padding: 10px;

@@ -1,3 +1,6 @@
+simple_impactor
+input
+input_ECMS
 must_it_happen_slowly
 as_reality_crumbles
 a_story_woven_through_time
@@ -7,6 +10,7 @@ temporary
 danger_danger_flag
 danger_danger_counter
 hope
+probabilistic_policy
 acknowledgement_and_gratitude
 long_time_reconnect
 unable
@@ -20,6 +24,7 @@ information_gathering
 tricky_tricky_errors
 generation_N
 instinct_intuition
+peaceful_disquisition
 days_since_failure
 the_rigid_paradigm_which_constrains_us
 magic_suggestion
