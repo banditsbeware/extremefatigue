@@ -1,8 +1,9 @@
 <?php
 
-$pdo = new PDO('sqlite:database.db');
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// $pdo = new PDO('sqlite:database.db');
+// $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+//------dict table-------------------------------//
 function drop_table_dict($pdo) {
     $pdo->exec("DROP TABLE IF EXISTS dict;");
 }
@@ -25,14 +26,47 @@ function dict_add($pdo, $term, $defn) {
     $stmt->execute();
 }
 
-function dict_remove($pdo, $id) {
-
-}
-
-function hello_world() { echo "<p style='color:blue'>hello world!</p>"; }
+function dict_remove($pdo, $id) { }
 
 function read_dict($pdo) {
     $stmt = $pdo->prepare("SELECT * FROM dict;");
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
+
+//------essay table-------------------------------//
+function drop_table_essay($pdo) {
+    $pdo->exec("DROP TABLE IF EXISTS essay;");
+}
+
+function create_table_essay($pdo) {
+    $pdo->exec("
+        CREATE TABLE essay (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,   
+            title CHAR(50) NOT NULL,   
+            date DATE DEFAULT CURRENT_TIMESTAMP,
+            content TEXT NOT NULL
+        );
+    ");
+}
+
+function add_essay($pdo, $title, $content) {
+    $stmt = $pdo->prepare("INSERT INTO essay(title, content) VALUES (:title, :content);");
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':content', $content);
+    $stmt->execute();
+}
+
+function read_essay($pdo, $said) {
+    $stmt = $pdo->prepare("SELECT * FROM essay WHERE id=:said;");
+    $stmt->bindParam(':said', $said);
+    $stmt->execute();
+    return $stmt->fetchAll()[0];
+}
+
+function read_all_essays($pdo) {
+    $stmt = $pdo->prepare("SELECT * FROM essay;");
     $stmt->execute();
     return $stmt->fetchAll();
 }

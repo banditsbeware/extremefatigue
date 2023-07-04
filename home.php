@@ -53,11 +53,42 @@
         </main>
     </body>
 
-    <?php
+    <p id='thought'></p>
+<!--<p id='thought'>.</br>.</br>.</br></p>-->
+    <?php // This Feels Very Wrong
       $thoughts = file("static/thoughts.txt");
-      echo "<p id='thought'>".$thoughts[array_rand($thoughts)]."</br>.</br>.</br>.</p>";      
+      // echo "<p id='thought'>".$thoughts[array_rand($thoughts)]."</br>.</br>.</br>.</p>";      
+      echo "<script>var thoughts = Array();";
+      foreach ($thoughts as $line) echo "thoughts.push(`$line`);";
+      echo "</script>";
     ?>
     <img style='margin-left: -50px; margin-bottom: -12px' src='static/media/walk1.gif'/>
     <div id='floor'></div>
+
+    <script>
+
+    let printer, printing, thought = document.getElementById('thought');
+
+    setInterval(() => {
+        thought.innerHTML = ''
+        if (!printing && Math.random() < 0.5) {
+            printing = 1
+            let txt = thoughts.at(Math.floor(Math.random() * thoughts.length))
+            let i = 0
+            printer = setInterval(() => {
+                thought.innerHTML += txt.at(i++)
+
+                if (i === txt.length) {
+                    clearInterval(printer)
+                    printing = 0
+                }
+
+            }, 30)
+        }
+            
+    }, 5000);
+    
+
+    </script>
 
 </html>

@@ -94,8 +94,9 @@ div#floor {
 p#thought {
     font-family: Chicago;
     margin-top: 50px;
-    margin-left: 123px;
+    margin-left: 100px;
     margin-bottom: -110px;
+    height: 40px;
 }
 
 

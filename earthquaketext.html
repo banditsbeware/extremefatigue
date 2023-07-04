@@ -1,0 +1,26 @@
+<html>
+    <style> sub, sup { font-size: 1em; } </style>
+<p class='myparagraph'>To be clear, the monster is in fact a nondomesticated animal — it’s unpredictable. The techno-solutionists promising the end of poverty and more avocado toast, if we would just get out of their way, are not to be trusted either. AI sentience is a stretch, but there are plausible paths to horrific outcomes. Even "dumb" computer viruses have caused billions of dollars in damage.
+</p>
+<script>
+
+    function earthquake(e) {
+        var out = "", txt = e.textContent;
+        var t, j, i = 0;
+        while (i < txt.length) {
+            j = Math.floor(2 + Math.random() * 8)
+            t = Math.floor(Math.random() * 3)
+            chunk = txt.substring(i, i + j)
+            switch (t) {
+                case 0: out += chunk; break
+                case 1: out += chunk.sub(); break
+                case 2: out += chunk.sup(); break
+            }
+            i += j
+        }
+        e.innerHTML = out;
+    }
+
+    setInterval(earthquake, 120, (document.querySelector('.myparagraph')))
+</script>
+</html>
