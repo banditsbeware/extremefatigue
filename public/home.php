@@ -31,7 +31,7 @@
                     ["firefox.png", ""], 
                     ["firefox1.gif", ""], 
                     ["hekate.png", "https://hekate.neocities.org/"],
-                    ["latex.gif", ""], 
+                    ["latex.gif", "https://link.springer.com/chapter/10.1007/978-3-031-09850-5_16"], 
                     ["miku.gif", ""], 
                     ["pbm.gif", ""], 
                     ["php.gif", ""], 
