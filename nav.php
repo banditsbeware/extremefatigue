@@ -31,7 +31,7 @@
         echo "<a id='c'>$fn</a>";
 
       else
-        echo "<a href='/$filename'>$fn</a>";
+        echo "<a href='$filename'>$fn</a>";
 
       $i += 1;
     }

@@ -8,7 +8,7 @@
     <title>%</title>
   </head>
   <body>
-    <?php include "src/nav.php"; ?>
+    <?php include "nav.php"; ?>
     <main>
         
         <div id='main-header' class='maincolumn'>

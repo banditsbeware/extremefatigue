@@ -15,7 +15,7 @@
 
   <body>
     
-    <?php include "src/nav.php"; ?>
+    <?php include "nav.php"; ?>
     
     <main>
       <h3>baz</h3>

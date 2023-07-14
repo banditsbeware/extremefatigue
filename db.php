@@ -1,7 +1,15 @@
 <?php
 
-// $pdo = new PDO('sqlite:database.db');
-// $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// the database is in the same folder as me -> public/../
+$DB_PATH = "sqlite:". dirname(__FILE__) ."/database.db";
+
+/*
+ * to use these database functions:
+ * include "db.php";
+ * $pdo = new PDO($DB_PATH);
+ * $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ * etc
+ */
 
 //------dict table-------------------------------//
 function drop_table_dict($pdo) {

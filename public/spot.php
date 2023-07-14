@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" contents="">
-  <link rel="stylesheet" href="static/style.css" type="text/css">
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
   <title>spotify playlists</title>
   <style>
     details {
@@ -35,7 +35,7 @@
 
 <body>
   
-  <?php include "src/nav.php"; ?>
+  <?php include "nav.php"; ?>
 
   <main>
 

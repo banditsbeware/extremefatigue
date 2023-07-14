@@ -1,7 +1,7 @@
 <?php
 
 $types = ["int", "float", "double", "long", "char", "bool"];
-$decl = file("static/variables.txt");
+$decl = file("../static/variables.txt");
 
 $L = [];
 
@@ -29,7 +29,7 @@ $files = glob("html/*.html");
 
 include "db.php";
 
-$pdo = new PDO('sqlite:database.db');
+$pdo = new PDO($DB_PATH);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $sas = read_all_essays($pdo);

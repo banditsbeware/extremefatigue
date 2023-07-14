@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="description" contents="">
-    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async 
@@ -44,16 +44,16 @@
 
   <body>
 
-    <?php include "src/nav.php"; ?>
+    <?php include "nav.php"; ?>
 
     <main>
       <h3>dictionary</h3>
 
       <ul id='dict'><?php
     
-        include 'src/db.php';
+        include "db.php";
 
-        $pdo = new PDO('sqlite:database.db');
+        $pdo = new PDO($DB_PATH);
         $dict = read_dict($pdo);
         
         foreach ($dict as $row) {
