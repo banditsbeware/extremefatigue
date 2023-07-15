@@ -13,6 +13,7 @@ main {
 
 div.maincolumn {
     grid-column: 1/8;
+    grid-row: 1/4;
 }
 
 div#buttons {
