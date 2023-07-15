@@ -1,6 +1,6 @@
 <?php include "db.php";
 
-$pdo = new PDO('sqlite:database.db');
+$pdo = new PDO($DB_PATH);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // get ID from request, zero if ivalid

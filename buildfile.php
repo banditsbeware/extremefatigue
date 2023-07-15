@@ -59,7 +59,7 @@ foreach ($sas as $sa) {
 
     // essays are just arrays of characters
     $L[] = type("char") 
-        ." <a class='salink' href='/bp.php?said=$sa[0]'>"
+        ." <a class='salink' href='/src/bp.php?said=$sa[0]'>"
         ."$sa[1]</a>[". strlen($sa[3]) ."];"; 
 
     // a few chances to add random stuff between links
