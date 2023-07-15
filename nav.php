@@ -1,3 +1,7 @@
+<!--
+    nav.php
+    included in all /public/*.php scripts to display the nav bar
+-->
 <style>
   div#nav { 
     margin: 15px;

@@ -51,7 +51,7 @@
 
       <ul id='dict'><?php
     
-        include "db.php";
+        include "database.php";
 
         $pdo = new PDO($DB_PATH);
         $dict = read_dict($pdo);

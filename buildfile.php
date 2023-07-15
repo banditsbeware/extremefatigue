@@ -1,3 +1,7 @@
+<!--
+    buildfile.php
+    constructs the main header and essay list on home.php
+-->
 <?php
 
 $types = ["int", "float", "double", "long", "char", "bool"];
@@ -27,7 +31,7 @@ $L[] = comment("//". str_pad("",             40, "-")               ."//");
 
 $files = glob("html/*.html");
 
-include "db.php";
+include "database.php";
 
 $pdo = new PDO($DB_PATH);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -59,7 +63,7 @@ foreach ($sas as $sa) {
 
     // essays are just arrays of characters
     $L[] = type("char") 
-        ." <a class='salink' href='/src/bp.php?said=$sa[0]'>"
+        ." <a class='salink' href='/src/view.php?said=$sa[0]'>"
         ."$sa[1]</a>[". strlen($sa[3]) ."];"; 
 
     // a few chances to add random stuff between links

@@ -4,3 +4,4 @@ save-dict.php
 import.py
 dict/*
 edit_*
+**/__pycache__

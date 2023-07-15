@@ -5,7 +5,7 @@ $DB_PATH = "sqlite:". dirname(__FILE__) ."/database.db";
 
 /*
  * to use these database functions:
- * include "db.php";
+ * include "database.php";
  * $pdo = new PDO($DB_PATH);
  * $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  * etc
