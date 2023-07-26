@@ -1,3 +1,5 @@
+#!/opt/homebrew/bin/python3
+
 # dbhelper.py
 # command line interface for editing the database
 
@@ -36,6 +38,7 @@ def main():
             raise Exception(f"file not found: {fn}")
 
         date = today()
+        title = input("title: ").strip()
 
         print(f'file: {fn}')
         print(f'date: {date}')
