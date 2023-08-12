@@ -53,7 +53,7 @@ if (isset($preview_filename)) {
         </style>
     </head>
     <main>
-        <a id='back' href='/home.php'>&lt; back</a>
+        <a id='back' href='/home.php' target='_self'>&lt; back</a>
         <?php echo $content; ?>
     </main>
 </html>
