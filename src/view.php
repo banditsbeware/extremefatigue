@@ -29,6 +29,12 @@ if (isset($preview_filename)) {
 <html>
     <head>
         <link rel="stylesheet" href="../static/style.css" type="text/css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="../static/wetlands.js"></script>
+        <script defer src="../static/personalGrowth.js"></script>
+
+        <base target="_blank">
         <title><?php echo "$title"; ?></title>
         <style>
             a#back {
@@ -39,6 +45,11 @@ if (isset($preview_filename)) {
                 text-decoration: none;
             }
             h3 { color: black; }
+            img {
+                display: block;
+                width: 80%;
+                margin: 20px auto;
+            }
         </style>
     </head>
     <main>
