@@ -28,7 +28,7 @@ def main():
     for row in c.fetchall():
         print_row(row[0], row[1], row[2])
 
-    choice = input("\nOptions:\n  (A)dd an essay\n  (E)dit an essay\n  > ").lower()
+    choice = input("\nOptions:\n  (A)dd an essay\n  (E)dit an essay\n  (D)elete an essay\n  > ").lower()
 
     if choice == 'a':
         # get a filename from user for reading
@@ -120,6 +120,40 @@ def main():
 
         print("database updated:")
         print_row(row[0], row[1], row[2])
+
+    elif choice == 'd':
+        idiot = True
+        while idiot:
+            try:
+                said = int( input("\nEnter essay id: ") )
+                idiot = False
+            except ValueError:
+                print(f"{said} is not an integer")
+                continue
+
+            c.execute( f"SELECT * FROM essay WHERE id={said};" )
+            rows = c.fetchall()
+            if len(rows) != 1:
+                print(f"no results for id {said}")
+                idiot = True
+
+        said, title, date, content = rows[0][0:]
+
+        x = input( f"are you sure you want to delete essay {said}: \"{title}\"? (y/N) " )
+
+        if x.lower() == "y": c.execute( f"DELETE FROM essay WHERE id={said};" )
+
+        sql.commit()
+        
+        # print new contents of database
+        c.execute( "SELECT * FROM essay;" )
+        print()
+        print_row('id', 'title', 'date')
+        print_row('-'*5, '-'*30, '-'*20)
+        for row in c.fetchall():
+            print_row(row[0], row[1], row[2])
+
+        print( "\ndeleted essay {said}: \"{title}\"" )
 
     
 if __name__ == '__main__':
