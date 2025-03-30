@@ -47,3 +47,5 @@ monthslong_accumulation_of_ash
 nonexistent_variable
 null_pointer
 mch_delete_me
+frame_counter
+my_pointer
