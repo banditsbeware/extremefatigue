@@ -31,6 +31,15 @@ p#cp {
 
 sup { line-height: 0; }
 
+p.caption {
+  font-style: italic;
+  text-align: center;
+}
+img.feature {
+  display: block;
+  width: 100%;
+}
+
 /* @media only screen and (max-width: 600px) {
     html {
       font-size: 1.1em;
