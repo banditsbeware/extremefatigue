@@ -1,13 +1,4 @@
 
-html {
-  box-sizing: border-box;
-  font-family: "Verdana";
-  font-size: 0.9em;
-  color: #3c3c3c;
-	background-color: #f5f5ff;
-  quotes: "\201D" "\201D";
-}
-
 img { max-width: 100%; }
 
 div#top { margin: 15px; }
@@ -40,12 +31,3 @@ img.feature {
   width: 100%;
 }
 
-/* @media only screen and (max-width: 600px) {
-    html {
-      font-size: 1.1em;
-      background-color: blanchedalmond;
-    }
-    main {
-      max-width: 100%;
-    }
-} */

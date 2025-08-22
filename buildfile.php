@@ -7,27 +7,28 @@
 $types = ["int", "float", "double", "long", "char", "bool"];
 $decl = file("../static/variables.txt");
 
-$L = [];
-
-function comment($txt) { return "<span class='comment'>$txt</span>"; }
+function hcomment($txt) { return "<li class='hcomment' class='comment'>$txt</li>"; }
+function comment($txt) { return "<li class='comment'>$txt</li>"; }
 function type($txt) { return "<span class='type'>$txt</span>"; }
 
+echo "<ol id='lines'>";
+
 // backslashes are awesome
-$L[] = comment("/*                                                                                    "); 
-$L[] = comment(" *    __                             __   __                       __                 "); 
-$L[] = comment(" *   /\\ \\                     __    /\\ \\ /\\ \\                   __/\\ \\__              "); 
-$L[] = comment(" *   \\_\\ \\     __     __  __ /\\_\\   \\_\\ \\\\ \\/  ____        ____/\\_\\ \\ ,_\\    __       "); 
-$L[] = comment(" *   /'_` \\  /'__`\\  /\\ \\/\\ \\\\/\\ \\  /'_` \\\\/  /',__\\      /',__\\/\\ \\ \\ \\/  /'__`\\     "); 
-$L[] = comment(" *  /\\ \\L\\ \\/\\ \\L\\.\\_\\ \\ \\_/ |\\ \\ \\/\\ \\L\\ \\  /\\__, `\\    /\\__, `\\ \\ \\ \\ \\_/\\  __/     "); 
-$L[] = comment(" *  \\ \\___,_\\ \\__/.\\_\\\\ \\___/  \\ \\_\\ \\___,_\\ \\/\\____/    \\/\\____/\\ \\_\\ \\__\\ \\____\\    "); 
-$L[] = comment(" *   \\/__,_ /\\/__/\\/_/ \\/__/    \\/_/\\/__,_ /  \\/___/      \\/___/  \\/_/\\/__/\\/____/    "); 
-$L[] = comment(" *                                                                                    "); 
-$L[] = comment(" *                                                                                    "); 
-$L[] = comment(" */                                                                                   "); 
-$L[] = comment("                                                                                      "); 
-$L[] = comment("//". str_pad("",             40, "-")               ."//");
-$L[] = comment("//". str_pad("DECLARATIONS", 40, " ", STR_PAD_BOTH) ."//");
-$L[] = comment("//". str_pad("",             40, "-")               ."//");
+echo hcomment("/*                                                                                    "); 
+echo hcomment(" *    __                             __   __                       __                 "); 
+echo hcomment(" *   /\\ \\                     __    /\\ \\ /\\ \\                   __/\\ \\__              "); 
+echo hcomment(" *   \\_\\ \\     __     __  __ /\\_\\   \\_\\ \\\\ \\/  ____        ____/\\_\\ \\ ,_\\    __       "); 
+echo hcomment(" *   /'_` \\  /'__`\\  /\\ \\/\\ \\\\/\\ \\  /'_` \\\\/  /',__\\      /',__\\/\\ \\ \\ \\/  /'__`\\     "); 
+echo hcomment(" *  /\\ \\L\\ \\/\\ \\L\\.\\_\\ \\ \\_/ |\\ \\ \\/\\ \\L\\ \\  /\\__, `\\    /\\__, `\\ \\ \\ \\ \\_/\\  __/     "); 
+echo hcomment(" *  \\ \\___,_\\ \\__/.\\_\\\\ \\___/  \\ \\_\\ \\___,_\\ \\/\\____/    \\/\\____/\\ \\_\\ \\__\\ \\____\\    "); 
+echo hcomment(" *   \\/__,_ /\\/__/\\/_/ \\/__/    \\/_/\\/__,_ /  \\/___/      \\/___/  \\/_/\\/__/\\/____/    "); 
+echo hcomment(" *                                                                                    "); 
+echo hcomment(" *                                                                                    "); 
+echo hcomment(" */                                                                                   "); 
+echo hcomment("                                                                                      "); 
+echo comment("//". str_pad("",             40, "-")               ."//");
+echo comment("//". str_pad("DECLARATIONS", 40, " ", STR_PAD_BOTH) ."//");
+echo comment("//". str_pad("",             40, "-")               ."//");
 
 $files = glob("html/*.html");
 
@@ -54,42 +55,29 @@ foreach ($sas as $sa) {
 
         // human-readable month
         $month = date('M', mktime(0, 0, 0, $m, 10));
-        $L[] = "";
-        $L[] = comment("// $month '$y");
+        echo "<li></li>";
+        echo comment("// $month '$y");
 
         // set the new current month
         $_m = $m;
     }
 
     // essays are just arrays of characters
-    $L[] = type("char") 
+    echo "<li>".type("char")
         ." <a class='salink' href='/src/view.php?said=$sa[0]'>"
-        ."$sa[1]</a>[". strlen($sa[3]) ."];"; 
+        ."$sa[1]</a>[". strlen($sa[3]) ."];</li>"; 
 
     // a few chances to add random stuff between links
     for ($r = 0; $r < rand(1, 8); $r++)
-        if (rand(0,100) / 100 < 0.1) 
-            $L[] = type($types[array_rand($types)]) ." ". 
-                    "<span class='salink'>". trim($decl[array_rand($decl)]) ."</span>;"; 
+        if (rand(0,100) < 20) 
+            echo "<li>".type($types[array_rand($types)]) ." ". 
+                    "<span class='salink'>". trim($decl[array_rand($decl)]) ."</span>;</li>"; 
 
     // at most one consecutive blank line
-    if (rand(0,100) / 100 < 0.1) $L[] = ""; 
+    if (rand(0,100) / 100 < 0.1) echo "<li></li>";        
 }
 
-$L[] = "                                                                                      "; 
-$L[] = "                                                                                      "; 
-$L[] = "                                                                                      "; 
-$L[] = "                                                                                      "; 
-$L[] = "                                                                                      "; 
+echo "<li></li><li></li><li></li><li></li><li></li>";
+echo "</ol>";
 
-
-$file = "<pre>";
-for ($i=0; $i<count($L); $i++) {
-    $file .= "<span class='nrcl'>". str_pad($i+1, 5, " ", STR_PAD_LEFT) ."| </span>";
-    $file .= $L[$i]."</br>";
-}
-
-$file .= "</pre>";
-
-echo $file;
 ?>

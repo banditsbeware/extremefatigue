@@ -26,12 +26,14 @@ if (isset($preview_filename)) {
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="../static/style.css" type="text/css">
+        <link rel="stylesheet" href="../static/common.css" type="text/css">
+        <link rel="stylesheet" href="../static/view.css" type="text/css">
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="../static/wetlands.js"></script>
+        <script src="../static/overlib.js"></script>
         <script defer src="../static/personalGrowth.js"></script>
 
         <base target="_blank">
@@ -41,7 +43,6 @@ if (isset($preview_filename)) {
                 margin-top: 3px;
                 margin-left: -15px;
                 color: #515151;
-                font-size: 12px;
                 text-decoration: none;
             }
             h3 { color: black; }
@@ -53,6 +54,7 @@ if (isset($preview_filename)) {
         </style>
     </head>
     <main>
+        <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
         <a id='back' href='/home.php' target='_self'>&lt; back</a>
         <?php echo $content; ?>
     </main>

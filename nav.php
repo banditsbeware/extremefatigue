@@ -6,7 +6,6 @@
   div#nav { 
     margin: 15px;
     color: #515151;
-    font-size: 14px;
   } 
   div.nav-item {
     padding: 0 0.1em;

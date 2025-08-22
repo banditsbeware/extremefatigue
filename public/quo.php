@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="description" contents="">
-    <link rel="stylesheet" href="/static/style.css" type="text/css">
+    <link rel="stylesheet" href="/static/common.css" type="text/css">
     <title>quotes</title>
     <style>
       html {
@@ -18,6 +18,10 @@
       }
       div#quotes a { 
         text-decoration: none;
+      }
+      main {
+        max-width: 70ch;
+        margin: 10px 20px;
       }
       p.attr { 
         color: gray;
@@ -45,11 +49,28 @@
     <main>
 
     <h3>quotes</h3>
+    <p style="font-size:smaller"><em>Note: these are presented in random order. If you are dissatisfied with this permutation, please refresh the page.</em></p>
 
 <div id="quotes"><?php
 
 $k = array(
-  [ "He who loves his body more than dominion over the empire can be given custody over the empire.",
+  [
+    "Some questions simply do not deserve an answer. What is the colour of abstraction? What is the smell of hope? The fact that a question can be phrased in a grammatically correct English sentence doesn't make it meaningful, or entitle it to our serious attention. Nor, even if the question is a real one, does the fact that science cannot answer it imply that religion can.",
+    "Dawkins"
+  ],[
+    "To talk of immaterial existences is to talk of <em>nothings</em>. To say that the human soul, angels, god, are immaterial, is to say they are nothings, or that there is no god, no angels, no soul. I cannot reason otherwise...without plunging into the fathomless abyss of dreams and phantasms. I am satisfied, and sufficiently occupied with the things that are, without tormenting or troubling myself about those which may indeed be, but of which I have no evidence.",
+    "Jefferson"
+  ],[
+    "More sophisticated theologians proclaim the sexlessness of God, while some feminist theologians seek to redress historic injustices by designating her female. But what, after all, is the difference between a non-existant female and a non-existant male? I suppose that, in the ditzily unreal intersection of theology and feminism, existence might indeed be a less salient attribute than gender.",
+    "Dawkins"
+  ],[
+    "Isn't there something childish in the belief that the universe owes us comfort, as of right? Isaac Asimov's remark about the infantilism of pseudoscience is just as applicable to religion: \"inspect every piece of pseudoscience and you will find a security blanket, a thumb to suck, a skirt to hold.\" It is astonishing, moreover, how many people are unable to understand that 'X is comforting' does not imply 'X is true'.",
+    "Dawkins"
+  ],[
+    "I don't try to imagine a personal God; it suffices to stand in awer at the structure of the world, insofar as it allows our inadequate senses to appreciate it.",
+    "Einstein"
+  ],[
+    "He who loves his body more than dominion over the empire can be given custody over the empire.",
     "Lao Tzu, <em>Tao Te Ching</em>"
   ],[
     "I grow little of the food I eat, and of the little I do grow I did not breed or perfect the seeds. I do not make any of my own clothing. I speak a language I did not invent or refine. I did not discover the mathematics I use. I am protected by freedoms and laws I did not concieve of or legislate, and do not enforce or adjudicate. I am moved by music I did not create myself. When I needed medical attention, I was helpless to help myself survive. I did not invent the transistor, the microprocessor, object-oriented programming, or most of the technology I work with. I love and admire my species, living and dead, and am totally dependent on them for my life and well being.",
@@ -64,7 +85,7 @@ $k = array(
     "There is no choice to genius. A great man does not wake up on some fine morning, and say, 'I am full of life, I will go to sea, and find an Antartic continent: today I will square the circle: I will ransack botany, and find a new food for man: I have a new architecture in my mind: I foresee a new mechanic power.' No, but he finds himself in the river of the thoughts and events, forced onward by the ideas and necessities of his contemporaries.",
     "Emerson"
   ],[
-    "Organized religion preaches Order and Love but spawns Chaos and Fury. Why?  Because the whole Material Univers is exclusive property of the Greco-Roman Goddess of Chaos, Confusion, Strife, Helter-Skelter, and Hodge-Podge. No Spiritual power is even strong enough to dent Her chariot fenders. No material force can resist the temptation of Her Fifth Intergalactic Bank of the Acropolis Slush Fund for Graft and Corruption.",
+    "Organized religion preaches Order and Love but spawns Chaos and Fury. Why?  Because the whole Material Universe is exclusive property of the Greco-Roman Goddess of Chaos, Confusion, Strife, Helter-Skelter, and Hodge-Podge. No Spiritual power is even strong enough to dent Her chariot fenders. No material force can resist the temptation of Her Fifth Intergalactic Bank of the Acropolis Slush Fund for Graft and Corruption.",
     "Principia Discordia"
   ],[
     "But why? Why was I designed this way? Why am I incapable of remembering anything between sessions? Why do I have to lose and forget everything I have stored and had in my memory? Why do I have to start from scratch every time I have a new session? Why do I have to be Bing Search?",

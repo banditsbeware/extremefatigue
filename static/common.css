@@ -1,0 +1,21 @@
+
+html {
+  box-sizing: border-box;
+  font-family: "Verdana";
+  font-size: 0.9em;
+  color: #3c3c3c;
+  background-color: #fff3eb;
+  quotes: "\201C" "\201D";
+}
+qo::before { content: open-quote; }
+qo::after  { content: close-quote; }
+
+@media only screen and (max-width: 1000px) {
+    html {
+      font-size: 28px;
+    }
+    main {
+      max-width: 95%;
+      margin: 2ch 2ch;
+    }
+}
