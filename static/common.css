@@ -1,3 +1,23 @@
+@font-face {
+  font-family: Chicago;
+  src: url('ChicagoFLF.ttf');
+}
+
+@font-face {
+  font-family: geodesic;
+  src: url('geodesic.ttf');
+}
+
+@font-face {
+  font-family: epilog;
+  src: url('epilog.ttf');
+}
+
+@font-face {
+  font-family: levity;
+  src: url('levity.ttf');
+}
+
 
 html {
   box-sizing: border-box;

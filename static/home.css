@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Chicago;
-  src: url('ChicagoFLF.ttf');
-}
-
 body {
     max-width: 95%;
     margin-left: 1ch;
