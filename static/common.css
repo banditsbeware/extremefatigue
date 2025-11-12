@@ -27,6 +27,9 @@ html {
   background-color: #fff3eb;
   quotes: "\201C" "\201D";
 }
+main {
+  margin: 10px 20px;
+}
 qo::before { content: open-quote; }
 qo::after  { content: close-quote; }
 

@@ -21,7 +21,6 @@
       }
       main {
         max-width: 70ch;
-        margin: 10px 20px;
       }
       p.attr { 
         color: gray;
@@ -55,6 +54,9 @@
 
 $k = array(
   [
+    "Science offers the boldest metaphysics of the age. It is a thoroughly human construct, driven by the faith that if we dream, press to discover, explain, and dream again, thereby plunging repeatedly into new terrain, the world will somehow become clearer and we will grasp the true strangeness of the universe. And the strangeness will all prove to be connected, and make sense.",
+    "Edward O. Wilson"
+  ], [
     "Some questions simply do not deserve an answer. What is the colour of abstraction? What is the smell of hope? The fact that a question can be phrased in a grammatically correct English sentence doesn't make it meaningful, or entitle it to our serious attention. Nor, even if the question is a real one, does the fact that science cannot answer it imply that religion can.",
     "Dawkins"
   ],[

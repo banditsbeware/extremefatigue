@@ -7,19 +7,16 @@
     margin: 15px;
     color: #515151;
   } 
-  div.nav-item {
-    padding: 0 0.1em;
-    display: inline-block;
-  }
-  div.nav-item a {
+  div#nav a {
+    color: inherit;
     text-decoration: none;
-    font-weight: regular;
   }
-  div.nav-item a:visited { color: inherit; }
-  div.nav-item a#c { color: #010199; }
+  div#nav a#c {
+    text-decoration: underline;
+  }
 </style>
 
-<div id='nav'><?php
+<div id='nav'><p><?php
 
     $me = $_SERVER["SCRIPT_NAME"];
     $i = 0;
@@ -30,7 +27,7 @@
 
       $fn = substr($filename, 0, -4);
 
-      if ("/$filename" == "$me")
+      if ("/public/$filename" == "$me")
         echo "<a id='c'>$fn</a>";
 
       else
@@ -40,4 +37,4 @@
     }
     echo " ]";
 
-?></div>
+?></p></div>
