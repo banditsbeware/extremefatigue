@@ -26,9 +26,6 @@ echo hcomment(" *                                                               
 echo hcomment(" *                                                                                    "); 
 echo hcomment(" */                                                                                   "); 
 echo hcomment("                                                                                      "); 
-echo comment("//". str_pad("",             40, "-")               ."//");
-echo comment("//". str_pad("DECLARATIONS", 40, " ", STR_PAD_BOTH) ."//");
-echo comment("//". str_pad("",             40, "-")               ."//");
 
 $files = glob("html/*.html");
 

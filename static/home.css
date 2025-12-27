@@ -102,7 +102,7 @@ p#thought {
     grid-column-end: 12;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     div#buttons { display: none; }
     .hcomment { display: none; }
 }

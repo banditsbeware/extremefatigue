@@ -1,5 +1,12 @@
 
-img { max-width: 100%; }
+a#back {
+    margin-top: 3px;
+    margin-left: -15px;
+    color: #515151;
+    text-decoration: none;
+}
+
+h3 { color: black; }
 
 div#top { margin: 15px; }
 
@@ -8,8 +15,12 @@ body {
 }
 
 main {
-  max-width: 70ch;
-  margin: 10px 20px;
+  /* max-width: 70ch; */
+  /* margin: 10px 20px; */
+}
+
+p {
+  max-width: 80ch;
 }
 
 p#cp {
@@ -24,10 +35,19 @@ sup { line-height: 0; }
 
 p.caption {
   font-style: italic;
-  text-align: center;
+  font-size: smaller;
+  margin-left: 25px;
 }
-img.feature {
-  display: block;
+
+img {
+  display: inline;
   width: 100%;
+  max-width: 500px;
+  transition: 0.15s;
+}
+
+img.view {
+  max-width: 2000px;
+  transition: 0.5s;
 }
 

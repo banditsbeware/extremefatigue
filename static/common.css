@@ -33,12 +33,8 @@ main {
 qo::before { content: open-quote; }
 qo::after  { content: close-quote; }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     html {
-      font-size: 28px;
-    }
-    main {
-      max-width: 95%;
-      margin: 2ch 2ch;
+      /* font-size: 28px; */
     }
 }

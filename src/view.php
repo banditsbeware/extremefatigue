@@ -28,6 +28,8 @@ if (isset($preview_filename)) {
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
         <link rel="stylesheet" href="../static/common.css" type="text/css">
         <link rel="stylesheet" href="../static/view.css" type="text/css">
 
@@ -35,27 +37,20 @@ if (isset($preview_filename)) {
         <script src="../static/wetlands.js"></script>
         <script src="../static/overlib.js"></script>
         <script defer src="../static/personalGrowth.js"></script>
-
         <base target="_blank">
         <title><?php echo "$title"; ?></title>
-        <style>
-            a#back {
-                margin-top: 3px;
-                margin-left: -15px;
-                color: #515151;
-                text-decoration: none;
-            }
-            h3 { color: black; }
-            img {
-                display: block;
-                width: 80%;
-                margin: 20px auto;
-            }
-        </style>
     </head>
     <main>
         <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
         <a id='back' href='/home.php' target='_self'>&lt; back</a>
         <?php echo $content; ?>
     </main>
+    <script>
+        $("img").click(toggleView);
+
+        function toggleView() {
+            $(this).toggleClass("view");
+        }
+
+    </script>
 </html>

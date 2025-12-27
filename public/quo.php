@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="description" contents="">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="/static/common.css" type="text/css">
     <title>quotes</title>
     <style>
